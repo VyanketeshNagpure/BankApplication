@@ -1,5 +1,7 @@
 package com.cognizant.bankapplication.model;
 
+import java.sql.Date;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
@@ -7,24 +9,24 @@ import jakarta.persistence.Id;
 public class Account {
 	
 	@Id
-	private String accountId;
+	private Long accountId;
 	private String customerName;
 	private String permanentAccountNumber;
-	private String dateOfBirth;
+	private Date dateOfBirth;
 	private String acocuntType;
 	private String accountStatus;
-	private String accountBalance;
+	private Double accountBalance;
 	private String phoneNumber;
 	private String emailId;
-	private String monthlyAverageBalance;
+	private Double monthlyAverageBalance;
 
 	public Account() {
 		super();
 	}
 
-	public Account(String accountId, String customerName, String permanentAccountNumber, String dateOfBirth,
-			String acocuntType, String accountStatus, String accountBalance, String phoneNumber, String emailId,
-			String monthlyAverageBalance) {
+	public Account(Long accountId, String customerName, String permanentAccountNumber, Date dateOfBirth,
+			String acocuntType, String accountStatus, Double accountBalance, String phoneNumber, String emailId,
+			Double monthlyAverageBalance) {
 		super();
 		this.accountId = accountId;
 		this.customerName = customerName;
@@ -38,11 +40,11 @@ public class Account {
 		this.monthlyAverageBalance = monthlyAverageBalance;
 	}
 
-	public String getAccountId() {
+	public Long getAccountId() {
 		return accountId;
 	}
 
-	public void setAccountId(String accountId) {
+	public void setAccountId(Long accountId) {
 		this.accountId = accountId;
 	}
 
@@ -62,11 +64,11 @@ public class Account {
 		this.permanentAccountNumber = permanentAccountNumber;
 	}
 
-	public String getDateOfBirth() {
+	public Date getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(String dateOfBirth) {
+	public void setDateOfBirth(Date dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 
@@ -86,11 +88,11 @@ public class Account {
 		this.accountStatus = accountStatus;
 	}
 
-	public String getAccountBalance() {
+	public Double getAccountBalance() {
 		return accountBalance;
 	}
 
-	public void setAccountBalance(String accountBalance) {
+	public void setAccountBalance(Double accountBalance) {
 		this.accountBalance = accountBalance;
 	}
 
@@ -110,20 +112,22 @@ public class Account {
 		this.emailId = emailId;
 	}
 
-	public String getMonthlyAverageBalance() {
+	public Double getMonthlyAverageBalance() {
 		return monthlyAverageBalance;
 	}
 
-	public void setMonthlyAverageBalance(String monthlyAverageBalance) {
+	public void setMonthlyAverageBalance(Double monthlyAverageBalance) {
 		this.monthlyAverageBalance = monthlyAverageBalance;
 	}
 
 	@Override
 	public String toString() {
-		return "Acount [accountId=" + accountId + ", customerName=" + customerName + ", permanentAccountNumber="
+		return "Account [accountId=" + accountId + ", customerName=" + customerName + ", permanentAccountNumber="
 				+ permanentAccountNumber + ", dateOfBirth=" + dateOfBirth + ", acocuntType=" + acocuntType
 				+ ", accountStatus=" + accountStatus + ", accountBalance=" + accountBalance + ", phoneNumber="
 				+ phoneNumber + ", emailId=" + emailId + ", monthlyAverageBalance=" + monthlyAverageBalance + "]";
 	}
+
+	
 
 }

@@ -21,7 +21,7 @@ public class AccountController {
 	
 	@GetMapping("/test")
 	private String testMethod() {
-		return "working";
+		return "working :)";
 	}
 	
 	@PostMapping("/account")
