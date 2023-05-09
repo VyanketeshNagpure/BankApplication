@@ -6,5 +6,9 @@ public interface AccountService {
 
 	public Long SaveAccountDetails(Account account);
 
-	public Account findByAccountId(String accountId);
+	public Account findByAccountId(Long accountId);
+
+	public Account update(Account account,Long id) ; 
+	
+
 }
