@@ -10,5 +10,5 @@ public interface AccountService {
 
 	public Account update(Account account,Long id) ; 
 	
-
+	public void deleteCustomerById(Long accountId);
 }

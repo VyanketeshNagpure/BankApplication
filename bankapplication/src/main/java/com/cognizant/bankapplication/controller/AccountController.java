@@ -49,4 +49,10 @@ public class AccountController {
 	   {
 		return new ResponseEntity<Account> (accountService.update(account, id),HttpStatus.CREATED);
 		}
+	
+	@DeleteMapping("/account/{accountId}")
+	public ResponseEntity<String> deletePassagerById(@PathVariable("accountId")Long accountId){
+	 accountService.deleteCustomerById(accountId);
+	return new ResponseEntity<String> ("Account deleted Successfully",HttpStatus.ACCEPTED);
+	}
 }
