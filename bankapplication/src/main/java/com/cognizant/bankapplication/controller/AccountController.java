@@ -12,31 +12,33 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cognizant.bankapplication.model.Account;
 import com.cognizant.bankapplication.model.response.AccountServiceResponseModel;
 import com.cognizant.bankapplication.repository.AccountRepository;
+import com.cognizant.bankapplication.service.AccountService;
 
 @RestController
 public class AccountController {
-	
+
 	@Autowired
-	AccountRepository accountRepository;
+	AccountService accountService;
 	
+
 	@GetMapping("/test")
+	
 	private String testMethod() {
 		return "working :)";
 	}
-	
+
 	@PostMapping("/account")
 	private ResponseEntity<AccountServiceResponseModel> createAccount(@RequestBody Account account) {
-		
-		accountRepository.save(account);
-		return ResponseEntity.status(HttpStatus.CREATED).body(new AccountServiceResponseModel("created Account Entry"));
+
+		Long AccountId = accountService.SaveAccountDetails(account);
+		return ResponseEntity.status(HttpStatus.CREATED).body(new AccountServiceResponseModel("created Account Entry",AccountId));
 	}
-	
+
 	@GetMapping("/account/{accountId}")
-	private ResponseEntity<Account> getByAccountId(@PathVariable String accountId){
-		
-		Account record = accountRepository.findByAccountId(accountId);
-		System.out.println(record);
-		
+	private ResponseEntity<Account> getByAccountId(@PathVariable String accountId) {
+
+		Account record = accountService.findByAccountId(accountId);
+
 		return ResponseEntity.status(HttpStatus.FOUND).body(record);
 	}
 

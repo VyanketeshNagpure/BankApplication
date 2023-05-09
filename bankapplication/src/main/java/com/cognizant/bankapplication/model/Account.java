@@ -1,15 +1,17 @@
 package com.cognizant.bankapplication.model;
 
 import java.sql.Date;
+import java.util.concurrent.ThreadLocalRandom;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
 public class Account {
-	
+
 	@Id
-	private Long accountId;
+	private Long accountId = Long.valueOf(Math.abs(ThreadLocalRandom.current()
+											  .nextLong(1_000_000_000, 9_999_999_999L)));
 	private String customerName;
 	private String permanentAccountNumber;
 	private Date dateOfBirth;
@@ -127,7 +129,5 @@ public class Account {
 				+ ", accountStatus=" + accountStatus + ", accountBalance=" + accountBalance + ", phoneNumber="
 				+ phoneNumber + ", emailId=" + emailId + ", monthlyAverageBalance=" + monthlyAverageBalance + "]";
 	}
-
-	
 
 }
