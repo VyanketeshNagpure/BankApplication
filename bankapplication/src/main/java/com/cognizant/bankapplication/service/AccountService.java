@@ -7,8 +7,4 @@ public interface AccountService {
 	public Long SaveAccountDetails(Account account);
 
 	public Account findByAccountId(Long accountId);
-
-	public Account update(Account account,Long id) ; 
-	
-	public void deleteCustomerById(Long accountId);
 }

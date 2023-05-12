@@ -3,11 +3,9 @@ package com.cognizant.bankapplication.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -43,16 +41,5 @@ public class AccountController {
 
 		return ResponseEntity.status(HttpStatus.FOUND).body(record);
 	}
-	
-	@PutMapping("/account/{id}")
-	public ResponseEntity<Account> update(@RequestBody Account account, @PathVariable("id")Long id)
-	   {
-		return new ResponseEntity<Account> (accountService.update(account, id),HttpStatus.CREATED);
-		}
-	
-	@DeleteMapping("/account/{accountId}")
-	public ResponseEntity<String> deletePassagerById(@PathVariable("accountId")Long accountId){
-	 accountService.deleteCustomerById(accountId);
-	return new ResponseEntity<String> ("Account deleted Successfully",HttpStatus.ACCEPTED);
-	}
+
 }
