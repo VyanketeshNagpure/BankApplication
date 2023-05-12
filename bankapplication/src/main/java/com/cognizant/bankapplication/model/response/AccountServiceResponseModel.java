@@ -4,23 +4,15 @@ public class AccountServiceResponseModel {
 	
 	
 	private String message;
-	private Long accountId;
 
 	
 
-	public AccountServiceResponseModel(String message, Long accountId) {
+	public AccountServiceResponseModel(String message) {
 		super();
 		this.message = message;
-		this.accountId = accountId;
 	}
 
-	public Long getAccountId() {
-		return accountId;
-	}
-
-	public void setAccountId(Long accountId) {
-		this.accountId = accountId;
-	}
+	
 
 	public String getMessage() {
 		return message;
