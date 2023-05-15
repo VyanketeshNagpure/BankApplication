@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cognizant.bankapplication.model.Account;
 import com.cognizant.bankapplication.model.response.AccountServiceResponseModel;
 import com.cognizant.bankapplication.service.AccountService;
+import com.cognizant.bankapplication.service.TransactionService;
+
 
 @RestController
 public class AccountController {
@@ -21,9 +23,11 @@ public class AccountController {
 	@Autowired
 	AccountService accountService;
 	
+	@Autowired
+	TransactionService transactionService;
 
 	@GetMapping("/acc/test")
-	
+
 	private String testMethod() {
 		return "working :)";
 	}
@@ -33,26 +37,26 @@ public class AccountController {
 
 		Long AccountId = accountService.SaveAccountDetails(account);
 		return ResponseEntity.status(HttpStatus.CREATED)
-						     .body(new AccountServiceResponseModel("created Account Entry with Acoount NO:" + AccountId));
+				.body(new AccountServiceResponseModel("created Account Entry with Acoount NO:" + AccountId));
 	}
 
 	@GetMapping("/account/{accountId}")
 	private ResponseEntity<Account> getByAccountId(@PathVariable Long accountId) {
 
 		Account record = accountService.findByAccountId(accountId);
-
 		return ResponseEntity.status(HttpStatus.FOUND).body(record);
 	}
-	
+
 	@PutMapping("/account/{id}")
-	public ResponseEntity<Account> updateAccountByID(@RequestBody Account account, @PathVariable("id")Long id)
-	   {
-		return new ResponseEntity<Account> (accountService.updateAccount(account, id),HttpStatus.CREATED);
-		}
-	
-	@DeleteMapping("/account/{accountId}")
-	public ResponseEntity<String> deleteAccountById(@PathVariable("accountId")Long accountId){
-	 accountService.deleteCustomerById(accountId);
-	return new ResponseEntity<String> ("Account deleted Successfully",HttpStatus.ACCEPTED);
+	public ResponseEntity<Account> updateAccountByID(@RequestBody Account account, @PathVariable("id") Long id) {
+		return new ResponseEntity<Account>(accountService.updateAccount(account, id), HttpStatus.CREATED);
 	}
+
+	@DeleteMapping("/account/{accountId}")
+	public ResponseEntity<String> deleteAccountById(@PathVariable("accountId") Long accountId) {
+		accountService.deleteCustomerById(accountId);
+		return new ResponseEntity<String>("Account deleted Successfully", HttpStatus.ACCEPTED);
+	}
+	
+	
 }

@@ -1,6 +1,5 @@
 package com.cognizant.bankapplication.model;
 
-
 import java.sql.Date;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -11,28 +10,36 @@ import jakarta.persistence.Id;
 public class Transaction {
 
 	@Id
-	private Long transactionId = Long.valueOf(Math.abs(ThreadLocalRandom.current()
-			  .nextLong(1_000_000, 9_999_999L)));;
-	private Long AccountId;
-	private Date DateTime = new Date(System.currentTimeMillis());
-	private Integer Amount;
+	private Long transactionId = Long
+			.valueOf(Math.abs(ThreadLocalRandom.current().nextLong(100_000_000, 999_999_999L)));;
+
+	private Long accountId;
+	private Date dateTime = new Date(System.currentTimeMillis());
+	private Long receiversAccountID;
 	private String transactionType;
-	private Long ReceiversAccountID;
-	
+	private Double amount;
 
 	public Transaction() {
 		super();
 	}
 
-	public Transaction(Long transactionId, Long accountId, Date dateTime, Integer amount, String transactionType,
-			Long receiversAccountID) {
+	public Transaction(Long transactionId, Long accountId, Date dateTime, Long receiversAccountID,
+			String transactionType, Double amount) {
 		super();
 		this.transactionId = transactionId;
-		AccountId = accountId;
-		DateTime = dateTime;
-		Amount = amount;
+		this.accountId = accountId;
+		this.dateTime = dateTime;
+		this.receiversAccountID = receiversAccountID;
 		this.transactionType = transactionType;
-		ReceiversAccountID = receiversAccountID;
+		this.amount = amount;
+	}
+	
+	public Double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(Double amount) {
+		this.amount = amount;
 	}
 
 	public Long getTransactionId() {
@@ -44,27 +51,27 @@ public class Transaction {
 	}
 
 	public Long getAccountId() {
-		return AccountId;
+		return accountId;
 	}
 
 	public void setAccountId(Long accountId) {
-		AccountId = accountId;
+		this.accountId = accountId;
 	}
 
 	public Date getDateTime() {
-		return DateTime;
+		return dateTime;
 	}
 
 	public void setDateTime(Date dateTime) {
-		DateTime = dateTime;
+		this.dateTime = dateTime;
 	}
 
-	public Integer getAmount() {
-		return Amount;
+	public Long getReceiversAccountID() {
+		return receiversAccountID;
 	}
 
-	public void setAmount(Integer amount) {
-		Amount = amount;
+	public void setReceiversAccountID(Long receiversAccountID) {
+		this.receiversAccountID = receiversAccountID;
 	}
 
 	public String getTransactionType() {
@@ -75,22 +82,13 @@ public class Transaction {
 		this.transactionType = transactionType;
 	}
 
-	public Long getReceiversAccountID() {
-		return ReceiversAccountID;
-	}
-
-	public void setReceiversAccountID(Long receiversAccountID) {
-		ReceiversAccountID = receiversAccountID;
-	}
-
 	@Override
 	public String toString() {
-		return "Transaction [transactionId=" + transactionId + ", AccountId=" + AccountId + ", DateTime=" + DateTime
-				+ ", Amount=" + Amount + ", transactionType=" + transactionType + ", ReceiversAccountID="
-				+ ReceiversAccountID + "]";
+		return "Transaction [transactionId=" + transactionId + ", accountId=" + accountId + ", dateTime=" + dateTime
+				+ ", receiversAccountID=" + receiversAccountID + ", transactionType=" + transactionType + ", amount="
+				+ amount + "]";
 	}
-	
-	
+
 	
 
 }

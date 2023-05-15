@@ -7,6 +7,12 @@ public class AccountServiceResponseModel {
 
 	
 
+	public AccountServiceResponseModel() {
+		super();
+	}
+
+
+
 	public AccountServiceResponseModel(String message) {
 		super();
 		this.message = message;
@@ -21,5 +27,14 @@ public class AccountServiceResponseModel {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "AccountServiceResponseModel [message=" + message + "]";
+	}
+	
+	
 
 }
