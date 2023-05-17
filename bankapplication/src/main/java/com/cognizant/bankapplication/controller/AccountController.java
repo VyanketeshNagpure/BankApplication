@@ -17,6 +17,8 @@ import com.cognizant.bankapplication.model.response.AccountServiceResponseModel;
 import com.cognizant.bankapplication.service.AccountService;
 import com.cognizant.bankapplication.service.TransactionService;
 
+import jakarta.validation.Valid;
+
 
 @RestController
 public class AccountController {
@@ -34,7 +36,7 @@ public class AccountController {
 	}
 
 	@PostMapping("/account")
-	private ResponseEntity<AccountServiceResponseModel> createAccount(@RequestBody Account account) {
+	private ResponseEntity<AccountServiceResponseModel> createAccount(@Valid @RequestBody Account account) {
 
 		Long AccountId = accountService.SaveAccountDetails(account);
 		return ResponseEntity.status(HttpStatus.CREATED)
@@ -55,7 +57,7 @@ public class AccountController {
 	
 */
 	@GetMapping("/account/{accountId}")
-    private ResponseEntity findById(@PathVariable Long accountId) {	  
+    private ResponseEntity findById(@Valid @PathVariable Long accountId) {	  
 		try {
 			Account account = accountService.findByAccountId(accountId);
 			return  new ResponseEntity<Account>(account, HttpStatus.FOUND);
@@ -70,7 +72,7 @@ public class AccountController {
 	
 	@PutMapping("/account/{id}")
 	
-	public ResponseEntity<String> updateAccountByID(@RequestBody Account account, @PathVariable("id") Long id) {
+	public ResponseEntity<String> updateAccountByID(@Valid @RequestBody Account account, @PathVariable("id") Long id) {
 		try{
 			accountService.updateAccount(account, id);
 			return new ResponseEntity<String>("Update is done.",HttpStatus.FOUND);
@@ -83,7 +85,7 @@ public class AccountController {
 }
 
 	@DeleteMapping("/account/{accountId}")
-	public ResponseEntity<String> deleteAccountById(@PathVariable("accountId") Long accountId) {
+	public ResponseEntity<String> deleteAccountById(@Valid @PathVariable("accountId") Long accountId) {
 		try {
 			Account account= accountService.deleteAccountById(accountId);
 		return new ResponseEntity<String>("Account Deleted ",HttpStatus.FOUND);
