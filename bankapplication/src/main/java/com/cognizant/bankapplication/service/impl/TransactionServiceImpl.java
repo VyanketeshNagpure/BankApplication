@@ -23,8 +23,11 @@ public class TransactionServiceImpl implements TransactionService {
 
 	@Override
 	public Long createTransaction(Transaction transaction) {
-		Account requiredAccount = accountRepository.findByAccountId(transaction.getAccountId());
-		System.out.println(requiredAccount);
+		
+		Long accountID = transaction.getAccountId();
+		
+		Account requiredAccount = accountRepository.findByAccountId(accountID);
+		transactionRepository.save(transaction);
 
 		Double accountBalance = requiredAccount.getAccountBalance();
 		if (transaction.getTransactionType().equalsIgnoreCase("credit")) {
@@ -34,8 +37,14 @@ public class TransactionServiceImpl implements TransactionService {
 		}
 
 		requiredAccount.setAccountBalance(accountBalance);
-		accountServiceImpl.updateAccount(requiredAccount, requiredAccount.getAccountId());
-		transactionRepository.save(transaction);
+		
+		Double monthlyAverageBalance = requiredAccount.getMonthlyAverageBalance();
+		if( monthlyAverageBalance != null) {
+			Long NumberOfTransactions = transactionRepository.countByAccountId(accountID);
+		requiredAccount.setMonthlyAverageBalance((monthlyAverageBalance*NumberOfTransactions+transaction.getAmount())/(NumberOfTransactions+1));
+		}
+		
+		accountServiceImpl.updateAccount(requiredAccount, accountID);
 		return transaction.getTransactionId();
 	}
 

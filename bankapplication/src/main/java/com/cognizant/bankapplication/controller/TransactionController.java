@@ -28,7 +28,6 @@ public class TransactionController {
 	@PostMapping("/transaction")
 	private ResponseEntity<AccountServiceResponseModel> createNewTransaction(@RequestBody Transaction transaction){
 		
-		System.out.println(transaction);
 		Long TransctionId = transactionService.createTransaction(transaction);
 		return ResponseEntity.status(HttpStatus.FOUND)
 				.body(new AccountServiceResponseModel("transaction successful id : " + TransctionId));

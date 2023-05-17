@@ -3,15 +3,21 @@ package com.cognizant.bankapplication.model;
 import java.sql.Date;
 import java.util.concurrent.ThreadLocalRandom;
 
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
+
+import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Account {
 
 	@Id
-	private Long accountId = Long.valueOf(Math.abs(ThreadLocalRandom.current()
-											  .nextLong(1_000_000_000, 9_999_999_999L)));
+	private Long accountId = Long.valueOf(Math.abs(ThreadLocalRandom.current().nextLong(1_000_000_000, 9_999_999_999L)));
+	
+	
 	private String customerName;
 	private String permanentAccountNumber;
 	private Date dateOfBirth;
