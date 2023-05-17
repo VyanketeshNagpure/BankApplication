@@ -10,26 +10,30 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import io.swagger.v3.oas.models.responses.ApiResponse;
+import com.cognizant.bankapplication.model.response.AccountServiceResponseModel;
+
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
+
 	@ExceptionHandler(ResourceNotFoundException.class)
-	public ResponseEntity<ApiResponse> resourceNotFoundExceptionHandler(ResourceNotFoundException ex){
+	public ResponseEntity<AccountServiceResponseModel> resourceNotFoundExceptionHandler(ResourceNotFoundException ex) {
 		String message = ex.getMessage();
-		ApiResponse apiResponse = new ApiResponse ();
-		return new ResponseEntity<ApiResponse>(apiResponse, HttpStatus.NOT_FOUND);
+		return ResponseEntity.status(HttpStatus.NOT_FOUND)
+				.body(new AccountServiceResponseModel(message));
 	}
+
 	@ExceptionHandler(MethodArgumentNotValidException.class)
-	public ResponseEntity<Map< String,String>> handleMethodArgumentNotValidException(MethodArgumentNotValidException ex){
- {
-	Map<String,String> resp = new HashMap<>();	
-	ex.getBindingResult().getAllErrors().forEach((error) ->{
-		String fieldName = ((FieldError)error).getField();
-		String message = error.getDefaultMessage();
-		resp.put(fieldName, message);
-	});
-	return new ResponseEntity<Map< String,String>>(resp, HttpStatus.BAD_REQUEST);
+	public ResponseEntity<Map<String, String>> handleMethodArgumentNotValidException(
+			MethodArgumentNotValidException ex) {
+		{
+			Map<String, String> resp = new HashMap<>();
+			ex.getBindingResult().getAllErrors().forEach((error) -> {
+				String fieldName = ((FieldError) error).getField();
+				String message = error.getDefaultMessage();
+				resp.put(fieldName, message);
+			});
+			return new ResponseEntity<Map<String, String>>(resp, HttpStatus.BAD_REQUEST);
+		}
 	}
-}
 }

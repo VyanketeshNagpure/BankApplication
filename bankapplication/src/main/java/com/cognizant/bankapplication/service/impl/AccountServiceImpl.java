@@ -49,11 +49,12 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
-	public Account deleteAccountById(Long accountId) {
+	public Long deleteAccountById(Long accountId) {
 		accountRepository.findById(accountId)
 				.orElseThrow(() -> new ResourceNotFoundException("Account", accountId, "accountId"));
 		accountRepository.deleteById(accountId);
-		return null;
+		
+		return accountId;
 
 	}
 

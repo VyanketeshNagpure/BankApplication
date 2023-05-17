@@ -1,9 +1,6 @@
 package com.cognizant.bankapplication.model;
 
-import java.sql.Date;
 import java.util.concurrent.ThreadLocalRandom;
-
-import org.springframework.format.annotation.DateTimeFormat;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -16,45 +13,44 @@ import jakarta.validation.constraints.Size;
 public class Account {
 
 	@Id
-	//@Size(min= 10, message="AccountId should have at least 10 digits")
 	private Long accountId = Long.valueOf(Math.abs(ThreadLocalRandom.current().nextLong(1_000_000_000, 9_999_999_999L)));
 	
 	@NotEmpty
 	@Size(min= 3, message="CustomerName should have at least 3 characters")
 	private String customerName;
+	
 	@NotEmpty
-	@Size(min= 10,max= 10, message="PermanentAccountNumber should have 10 Digits")
-	//@Size(max= 10, message="permanentAccountNumber should have at least 3 characters")
+	@Pattern(regexp="(^$|[A-Z]{5}[0-9]{4}[A-Z]{1})",message = "First five characters are letters, next 4 numerals, last character letter")
 	private String permanentAccountNumber;
-	//@NotEmpty
-	//@Size(min= 3, message="dateOfBirth should have at least 3 characters")
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	//@DateTimeFormat(pattern = "yyyy-MM-dd", message=" Enter date in yyyy-MM-dd format")
-	private Date dateOfBirth;
+	
+	@Pattern(regexp = "^((19|20)\\d\\d)-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$",message= "enter in date format yyyy-MM-dd")
+	private String dateOfBirth;
+	
 	@NotEmpty
 	@Size(min= 3, message="AcocuntType should have at least 3 characters")
 	private String acocuntType;
+	
 	@NotEmpty
 	@Size(min= 3, message="AccountStatus should have at least 3 characters")
 	private String accountStatus;
-	//@NotEmpty
-	//@Size(min= 3, message="accountBalance should have at least 3 characters")
+	
 	private Double accountBalance;
+	
 	@NotEmpty
 	@Pattern(regexp="(^$|[0-9]{10})", message="PhoneNumber should have 10 digits")
-	//@Size(max = 10, message="PhoneNumber should have at least 10 digits")
-	//@Size(min = 10, message="PhoneNumber should have at least 10 digits")
 	private String phoneNumber;
+	
 	@Email
-	@Size(min= 3, message="Plaese Enter Correct Email format.")
+	@Size(min= 3, message="Please Enter Correct Email format.")
 	private String emailId;
+	
 	private Double monthlyAverageBalance;
 
 	public Account() {
 		super();
 	}
 
-	public Account(Long accountId, String customerName, String permanentAccountNumber, Date dateOfBirth,
+	public Account(Long accountId, String customerName, String permanentAccountNumber, String dateOfBirth,
 			String acocuntType, String accountStatus, Double accountBalance, String phoneNumber, String emailId,
 			Double monthlyAverageBalance) {
 		super();
@@ -94,11 +90,11 @@ public class Account {
 		this.permanentAccountNumber = permanentAccountNumber;
 	}
 
-	public Date getDateOfBirth() {
+	public String getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(Date dateOfBirth) {
+	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 

@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cognizant.bankapplication.Exception.ResourceNotFoundException;
 import com.cognizant.bankapplication.model.Account;
 import com.cognizant.bankapplication.model.response.AccountServiceResponseModel;
 import com.cognizant.bankapplication.service.AccountService;
@@ -19,13 +18,12 @@ import com.cognizant.bankapplication.service.TransactionService;
 
 import jakarta.validation.Valid;
 
-
 @RestController
 public class AccountController {
 
 	@Autowired
 	AccountService accountService;
-	
+
 	@Autowired
 	TransactionService transactionService;
 
@@ -40,62 +38,31 @@ public class AccountController {
 
 		Long AccountId = accountService.SaveAccountDetails(account);
 		return ResponseEntity.status(HttpStatus.CREATED)
-				.body(new AccountServiceResponseModel("created Account Entry with Acoount NO:" + AccountId));
+				.body(new AccountServiceResponseModel("created Account Entry with Acoount NO: " + AccountId));
 	}
 
-	/*@GetMapping("/account/{accountId}")
-	private ResponseEntity<Account> getByAccountId(@PathVariable Long accountId) {
-
-		Account record = accountService.findByAccountId(accountId);
-		return ResponseEntity.status(HttpStatus.FOUND).body(record);
-	}
-	/*
-	 @GetMapping("{id}")
-	public TravelAgency findpassengerById(@PathVariable("id")long id) {
-		return travelService.getPassengerById(id);
-	}
-	
-*/
 	@GetMapping("/account/{accountId}")
-    private ResponseEntity findById(@Valid @PathVariable Long accountId) {	  
-		try {
-			Account account = accountService.findByAccountId(accountId);
-			return  new ResponseEntity<Account>(account, HttpStatus.FOUND);
-}
-		catch(ResourceNotFoundException E) {
-			return new ResponseEntity<String>("Invalid Account ID, Please enter "
-					+ "valid Account ID. ", HttpStatus.NOT_FOUND);
-		}
-}
-	
-	
-	
+	private ResponseEntity<Account> findById(@PathVariable Long accountId) {
+		Account account = accountService.findByAccountId(accountId);
+		return new ResponseEntity<Account>(account, HttpStatus.FOUND);
+	}
+
 	@PutMapping("/account/{id}")
-	
-	public ResponseEntity<String> updateAccountByID(@Valid @RequestBody Account account, @PathVariable("id") Long id) {
-		try{
-			accountService.updateAccount(account, id);
-			return new ResponseEntity<String>("Update is done.",HttpStatus.FOUND);
-		}
-		catch(ResourceNotFoundException E)
-		{return new ResponseEntity<String>("Invalid Account ID, Please enter "
-				+ "valid Account ID.",HttpStatus.NOT_FOUND);
-			
-		}
-}
+
+	public ResponseEntity<AccountServiceResponseModel> updateAccountByID(@Valid @RequestBody Account account,
+			@PathVariable("id") Long id) {
+
+		accountService.updateAccount(account, id);
+		return ResponseEntity.status(HttpStatus.FOUND).body(new AccountServiceResponseModel("Update is done"));
+
+	}
 
 	@DeleteMapping("/account/{accountId}")
-	public ResponseEntity<String> deleteAccountById(@Valid @PathVariable("accountId") Long accountId) {
-		try {
-			Account account= accountService.deleteAccountById(accountId);
-		return new ResponseEntity<String>("Account Deleted ",HttpStatus.FOUND);
-		
-	}
-		catch(ResourceNotFoundException E) {
-			return new ResponseEntity<String>("Invalid Account ID, Please enter "
-					+ "valid Account ID. ",HttpStatus.NOT_FOUND);
-		}
+	public ResponseEntity<AccountServiceResponseModel> deleteAccountById(@PathVariable("accountId") Long accountId) {
+
+		Long deletedAccountId = accountService.deleteAccountById(accountId);
+		return  ResponseEntity.status(HttpStatus.FOUND)
+				.body(new AccountServiceResponseModel("Account Deleted with id: " + deletedAccountId));
+
 	}
 }
-
-	
