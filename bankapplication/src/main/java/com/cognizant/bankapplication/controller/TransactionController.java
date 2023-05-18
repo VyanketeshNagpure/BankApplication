@@ -12,6 +12,8 @@ import com.cognizant.bankapplication.model.Transaction;
 import com.cognizant.bankapplication.model.response.AccountServiceResponseModel;
 import com.cognizant.bankapplication.service.TransactionService;
 
+import jakarta.validation.Valid;
+
 @RestController
 public class TransactionController {
 	
@@ -26,7 +28,7 @@ public class TransactionController {
 	
 	
 	@PostMapping("/transaction")
-	private ResponseEntity<AccountServiceResponseModel> createNewTransaction(@RequestBody Transaction transaction){
+	private ResponseEntity<AccountServiceResponseModel> createNewTransaction(@Valid @RequestBody Transaction transaction){
 		
 		Long TransctionId = transactionService.createTransaction(transaction);
 		return ResponseEntity.status(HttpStatus.FOUND)
