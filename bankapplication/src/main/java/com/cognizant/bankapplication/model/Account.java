@@ -1,19 +1,24 @@
 package com.cognizant.bankapplication.model;
 
-import java.util.concurrent.ThreadLocalRandom;
+import java.math.BigInteger;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
 @Entity
+@SequenceGenerator(name="account_id_seq", initialValue=1_276_860_001, allocationSize = 0)
 public class Account {
 
 	@Id
-	private Long accountId = Long.valueOf(Math.abs(ThreadLocalRandom.current().nextLong(1_000_000_000, 9_999_999_999L)));
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="account_id_seq")
+	private BigInteger accountId;
 	
 	@NotEmpty
 	@Size(min= 3, message="CustomerName should have at least 3 characters")
@@ -50,7 +55,7 @@ public class Account {
 		super();
 	}
 
-	public Account(Long accountId, String customerName, String permanentAccountNumber, String dateOfBirth,
+	public Account(BigInteger accountId, String customerName, String permanentAccountNumber, String dateOfBirth,
 			String acocuntType, String accountStatus, Double accountBalance, String phoneNumber, String emailId,
 			Double monthlyAverageBalance) {
 		super();
@@ -66,11 +71,11 @@ public class Account {
 		this.monthlyAverageBalance = monthlyAverageBalance;
 	}
 
-	public Long getAccountId() {
+	public BigInteger getAccountId() {
 		return accountId;
 	}
 
-	public void setAccountId(Long accountId) {
+	public void setAccountId(BigInteger accountId) {
 		this.accountId = accountId;
 	}
 

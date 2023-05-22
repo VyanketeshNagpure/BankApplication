@@ -1,5 +1,7 @@
 package com.cognizant.bankapplication.service.impl;
 
+import java.math.BigInteger;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +17,7 @@ public class AccountServiceImpl implements AccountService {
 	AccountRepository accountRepository;
 
 	@Override
-	public Long SaveAccountDetails(Account account) {
+	public BigInteger SaveAccountDetails(Account account) {
 		
 		if(account.getMonthlyAverageBalance()==null) {
 			account.setMonthlyAverageBalance(account.getAccountBalance());
@@ -25,14 +27,14 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
-	public Account findByAccountId(Long accountId) {
+	public Account findByAccountId(BigInteger accountId) {
 		return this.accountRepository.findById(accountId)
 				.orElseThrow(() -> new ResourceNotFoundException("Account", accountId, "accountId"));
 
 	}
 
 	@Override
-	public Account updateAccount(Account account, Long accountId) {
+	public Account updateAccount(Account account, BigInteger accountId) {
 		Account existingCustomer = accountRepository.findById(accountId)
 				.orElseThrow(() -> new ResourceNotFoundException("Account", accountId, "accountId"));
 		existingCustomer.setCustomerName(account.getCustomerName());
@@ -49,7 +51,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
-	public Long deleteAccountById(Long accountId) {
+	public BigInteger deleteAccountById(BigInteger accountId) {
 		accountRepository.findById(accountId)
 				.orElseThrow(() -> new ResourceNotFoundException("Account", accountId, "accountId"));
 		accountRepository.deleteById(accountId);

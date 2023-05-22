@@ -3,6 +3,8 @@ package com.cognizant.bankapplication.Exception;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -16,10 +18,13 @@ import com.cognizant.bankapplication.model.response.AccountServiceResponseModel;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
-
+	
+	Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
+	
 	@ExceptionHandler(ResourceNotFoundException.class)
 	public ResponseEntity<AccountServiceResponseModel> resourceNotFoundExceptionHandler(ResourceNotFoundException ex) {
 		String message = ex.getMessage();
+		logger.trace(message);
 		return ResponseEntity.status(HttpStatus.NOT_FOUND)
 				.body(new AccountServiceResponseModel(message));
 	}
@@ -33,6 +38,7 @@ public class GlobalExceptionHandler {
 				String fieldName = ((FieldError) error).getField();
 				String message = error.getDefaultMessage();
 				resp.put(fieldName, message);
+				logger.trace(message);
 			});
 			return new ResponseEntity<Map<String, String>>(resp, HttpStatus.BAD_REQUEST);
 		}
@@ -42,6 +48,7 @@ public class GlobalExceptionHandler {
 	public ResponseEntity<AccountServiceResponseModel> HttpMessageNotReadableExceptionExceptionHandler(HttpMessageNotReadableException ex) {
 		
 	//	throw new MethodArgumentNotValidException();
+		logger.trace(ex.getLocalizedMessage());
 		return ResponseEntity.status(HttpStatus.NOT_FOUND)
 				.body(new AccountServiceResponseModel(ex.getLocalizedMessage()));
 		

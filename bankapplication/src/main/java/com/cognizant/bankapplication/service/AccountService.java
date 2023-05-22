@@ -1,14 +1,16 @@
 package com.cognizant.bankapplication.service;
 
+import java.math.BigInteger;
+
 import com.cognizant.bankapplication.model.Account;
 
 public interface AccountService {
 
-	public Long SaveAccountDetails(Account account);
+	public BigInteger SaveAccountDetails(Account account);
 
-	public Account findByAccountId(Long accountId);
+	public Account findByAccountId(BigInteger accountId);
 
-	public Account updateAccount(Account account,Long id) ; 
+	public Account updateAccount(Account account,BigInteger id) ; 
 	
-	public Long deleteAccountById(Long accountId);
+	public BigInteger deleteAccountById(BigInteger accountId);
 }

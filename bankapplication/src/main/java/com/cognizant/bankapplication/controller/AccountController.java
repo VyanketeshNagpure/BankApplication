@@ -1,6 +1,10 @@
 
 package com.cognizant.bankapplication.controller;
 
+import java.math.BigInteger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +26,8 @@ import jakarta.validation.Valid;
 @RestController
 public class AccountController {
 
+	Logger logger = LoggerFactory.getLogger(AccountController.class);
+	
 	@Autowired
 	AccountService accountService;
 
@@ -36,32 +42,37 @@ public class AccountController {
 
 	@PostMapping("/account")
 	private ResponseEntity<AccountServiceResponseModel> createAccount(@Valid @RequestBody Account account) {
-
-		Long AccountId = accountService.SaveAccountDetails(account);
+		
+		
+		BigInteger AccountId = accountService.SaveAccountDetails(account);
+		logger.trace("Account created with id "+ account.getAccountId());
 		return ResponseEntity.status(HttpStatus.CREATED)
 				.body(new AccountServiceResponseModel("created Account Entry with Acoount NO: " + AccountId));
 	}
 
 	@GetMapping("/account/{accountId}")
-	private ResponseEntity<Account> findById(@PathVariable Long accountId) {
+	private ResponseEntity<Account> findById(@PathVariable BigInteger accountId) {
 		Account account = accountService.findByAccountId(accountId);
+		logger.trace("Account details fetched with id "+ account.getAccountId());
 		return new ResponseEntity<Account>(account, HttpStatus.FOUND);
 	}
 
 	@PutMapping("/account/{id}")
 
 	public ResponseEntity<AccountServiceResponseModel> updateAccountByID(@Valid @RequestBody Account account,
-			@PathVariable("id") Long id) {
+			@PathVariable("id") BigInteger id) {
 
 		accountService.updateAccount(account, id);
+		logger.trace("Account details updated with id "+ account.getAccountId());
 		return ResponseEntity.status(HttpStatus.FOUND).body(new AccountServiceResponseModel("Update is done"));
 
 	}
 
 	@DeleteMapping("/account/{accountId}")
-	public ResponseEntity<AccountServiceResponseModel> deleteAccountById(@PathVariable("accountId") Long accountId) {
+	public ResponseEntity<AccountServiceResponseModel> deleteAccountById(@PathVariable("accountId") BigInteger accountId) {
 
-		Long deletedAccountId = accountService.deleteAccountById(accountId);
+		BigInteger deletedAccountId = accountService.deleteAccountById(accountId);
+		logger.trace("Account deleted with id "+ accountId);
 		return  ResponseEntity.status(HttpStatus.FOUND)
 				.body(new AccountServiceResponseModel("Account Deleted with id: " + deletedAccountId));
 

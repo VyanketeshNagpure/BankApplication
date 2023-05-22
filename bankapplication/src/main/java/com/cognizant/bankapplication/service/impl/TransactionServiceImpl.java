@@ -1,5 +1,9 @@
 package com.cognizant.bankapplication.service.impl;
 
+import java.math.BigInteger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,39 +26,55 @@ public class TransactionServiceImpl implements TransactionService {
 	@Autowired
 	AccountServiceImpl accountServiceImpl;
 
+	Logger logger = LoggerFactory.getLogger(TransactionService.class);
+
 	@Override
 	public Long createTransaction(Transaction transaction) {
-		
-		Long accountID = transaction.getAccountId();
+
+		BigInteger accountID = transaction.getAccountId();
 		Account requiredAccount = accountRepository.findById(accountID)
 				.orElseThrow(() -> new ResourceNotFoundException("Account", accountID, "accountId"));
-		Account requiredRecieversaccountAccount = accountRepository.findByAccountId(transaction.getReceiversAccountID());
-		Double recieversAccountbalanceDouble = requiredRecieversaccountAccount.getAccountBalance();
+		
 		transactionRepository.save(transaction);
 
 		Double accountBalance = requiredAccount.getAccountBalance();
 		if (transaction.getTransactionType().toString().equals("credit")) {
 			accountBalance = accountBalance + transaction.getAmount();
+			logger.trace("Account with id " + accountID + " credited with ammount " + transaction.getAmount());
 		} else if (transaction.getTransactionType().toString().equals("debit")) {
 			accountBalance = accountBalance - transaction.getAmount();
-		
-		}
-		else if (transaction.getTransactionType().toString().equals("transfer")) {
-			accountBalance = accountBalance - transaction.getAmount();
-		recieversAccountbalanceDouble=recieversAccountbalanceDouble+transaction.getAmount();	
+			logger.trace("Account with id " + accountID + " debited with ammount " + transaction.getAmount());
+
+		} else if (transaction.getTransactionType().toString().equals("transfer")) {
 			
+			Account requiredRecieversaccountAccount = accountRepository.findById(transaction.getReceiversAccountID())
+					.orElseThrow(() -> new ResourceNotFoundException("Account", accountID, "accountId"));
+			Double recieversAccountbalanceDouble = requiredRecieversaccountAccount.getAccountBalance();
+			
+			
+			accountBalance = accountBalance - transaction.getAmount();
+			recieversAccountbalanceDouble = recieversAccountbalanceDouble + transaction.getAmount();
+			requiredRecieversaccountAccount.setAccountBalance(recieversAccountbalanceDouble);
+			
+			accountServiceImpl.updateAccount(requiredRecieversaccountAccount,
+					requiredRecieversaccountAccount.getAccountId());
+			
+			logger.trace("Account with id " + accountID + " debited with ammount " + transaction.getAmount()
+					+ " credited to account " + requiredRecieversaccountAccount.getAccountId());
+
 		}
-		requiredRecieversaccountAccount.setAccountBalance(recieversAccountbalanceDouble);
 		requiredAccount.setAccountBalance(accountBalance);
-		
+
 		Double monthlyAverageBalance = requiredAccount.getMonthlyAverageBalance();
-		if( monthlyAverageBalance != null) {
+		if (monthlyAverageBalance != null) {
 			Long NumberOfTransactions = transactionRepository.countByAccountId(accountID);
-		requiredAccount.setMonthlyAverageBalance((monthlyAverageBalance*NumberOfTransactions+transaction.getAmount())/(NumberOfTransactions+1));
+			requiredAccount
+					.setMonthlyAverageBalance((monthlyAverageBalance * NumberOfTransactions + transaction.getAmount())
+							/ (NumberOfTransactions + 1));
 		}
-		accountServiceImpl.updateAccount(requiredRecieversaccountAccount, requiredRecieversaccountAccount.getAccountId());
+		
 		accountServiceImpl.updateAccount(requiredAccount, accountID);
-		System.out.println(requiredRecieversaccountAccount);
+		
 		return transaction.getTransactionId();
 	}
 

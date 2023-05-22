@@ -1,0 +1,1115 @@
+2023-05-19T14:32:33.452+05:30  INFO 24504 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 24504 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:32:33.455+05:30 DEBUG 24504 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:32:33.456+05:30  INFO 24504 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:32:33.494+05:30  INFO 24504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-19T14:32:33.494+05:30  INFO 24504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-19T14:32:34.442+05:30  INFO 24504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:32:34.503+05:30  INFO 24504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:32:35.007+05:30  INFO 24504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:32:35.014+05:30  INFO 24504 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:32:35.015+05:30  INFO 24504 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:32:35.090+05:30  INFO 24504 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:32:35.090+05:30  INFO 24504 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1595 ms
+2023-05-19T14:32:35.172+05:30  INFO 24504 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-19T14:32:35.418+05:30  INFO 24504 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:32:35.421+05:30  INFO 24504 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-19T14:32:35.432+05:30  INFO 24504 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:32:35.585+05:30  INFO 24504 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:32:35.627+05:30  INFO 24504 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-19T14:32:35.901+05:30  INFO 24504 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:32:36.833+05:30  INFO 24504 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T14:32:36.844+05:30  INFO 24504 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:32:37.285+05:30  WARN 24504 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T14:32:38.364+05:30  INFO 24504 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T14:32:38.368+05:30  INFO 24504 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T14:32:38.442+05:30  INFO 24504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T14:32:38.460+05:30  INFO 24504 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 5.39 seconds (process running for 6.137)
+2023-05-19T14:32:39.181+05:30  INFO 24504 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T14:32:39.181+05:30  INFO 24504 --- [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T14:32:39.183+05:30  INFO 24504 --- [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-19T14:33:56.525+05:30 TRACE 24504 --- [http-nio-8082-exec-1] c.c.b.service.TransactionService         : Account with id 1000000002 credited with ammount 600.0
+2023-05-19T14:33:57.246+05:30 TRACE 24504 --- [http-nio-8082-exec-5] c.c.b.service.TransactionService         : Account with id 1000000002 credited with ammount 600.0
+2023-05-19T14:33:57.768+05:30 TRACE 24504 --- [http-nio-8082-exec-3] c.c.b.service.TransactionService         : Account with id 1000000002 credited with ammount 600.0
+2023-05-19T14:33:58.241+05:30 TRACE 24504 --- [http-nio-8082-exec-2] c.c.b.service.TransactionService         : Account with id 1000000002 credited with ammount 600.0
+2023-05-19T14:33:58.736+05:30 TRACE 24504 --- [http-nio-8082-exec-6] c.c.b.service.TransactionService         : Account with id 1000000002 credited with ammount 600.0
+2023-05-19T14:33:59.239+05:30 TRACE 24504 --- [http-nio-8082-exec-7] c.c.b.service.TransactionService         : Account with id 1000000002 credited with ammount 600.0
+2023-05-19T14:34:05.234+05:30 TRACE 24504 --- [http-nio-8082-exec-8] c.c.b.service.TransactionService         : Account with id 1000000002 debited with ammount 600.0
+2023-05-19T14:34:05.784+05:30 TRACE 24504 --- [http-nio-8082-exec-10] c.c.b.service.TransactionService         : Account with id 1000000002 debited with ammount 600.0
+2023-05-19T14:34:06.201+05:30 TRACE 24504 --- [http-nio-8082-exec-9] c.c.b.service.TransactionService         : Account with id 1000000002 debited with ammount 600.0
+2023-05-19T14:35:12.505+05:30  INFO 24504 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-19T14:35:12.520+05:30  WARN 24504 --- [RMI TCP Connection(15)-127.0.0.1] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T14:35:12.520+05:30  INFO 24504 --- [RMI TCP Connection(15)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T14:35:12.522+05:30  INFO 24504 --- [RMI TCP Connection(15)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T14:35:12.520+05:30 ERROR 24504 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T14:35:12.532+05:30  INFO 24504 --- [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:35:12.537+05:30  INFO 24504 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-19T14:35:12.539+05:30  INFO 24504 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-19T14:36:32.364+05:30  INFO 10528 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 10528 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:36:32.366+05:30 DEBUG 10528 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:36:32.367+05:30  INFO 10528 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:36:32.421+05:30  INFO 10528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-19T14:36:32.421+05:30  INFO 10528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-19T14:36:33.849+05:30  INFO 10528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:36:33.922+05:30  INFO 10528 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:36:34.572+05:30  INFO 10528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:36:34.582+05:30  INFO 10528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:36:34.582+05:30  INFO 10528 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:36:34.685+05:30  INFO 10528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:36:34.685+05:30  INFO 10528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2263 ms
+2023-05-19T14:36:34.794+05:30  INFO 10528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-19T14:36:35.047+05:30  INFO 10528 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:36:35.050+05:30  INFO 10528 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-19T14:36:35.062+05:30  INFO 10528 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:36:35.225+05:30  INFO 10528 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:36:35.285+05:30  INFO 10528 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-19T14:36:35.580+05:30  INFO 10528 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:36:36.499+05:30  INFO 10528 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T14:36:36.510+05:30  INFO 10528 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:36:37.058+05:30  WARN 10528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T14:36:38.461+05:30  INFO 10528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T14:36:38.466+05:30  INFO 10528 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T14:36:38.567+05:30  INFO 10528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T14:36:38.588+05:30  INFO 10528 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 6.642 seconds (process running for 7.824)
+2023-05-19T14:36:39.676+05:30  INFO 10528 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T14:36:39.676+05:30  INFO 10528 --- [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T14:36:39.679+05:30  INFO 10528 --- [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-19T14:39:11.758+05:30  INFO 10528 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-19T14:39:11.774+05:30  WARN 10528 --- [RMI TCP Connection(15)-127.0.0.1] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T14:39:11.775+05:30  INFO 10528 --- [RMI TCP Connection(15)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T14:39:11.777+05:30  INFO 10528 --- [RMI TCP Connection(15)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T14:39:11.774+05:30 ERROR 10528 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T14:39:11.793+05:30  INFO 10528 --- [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:39:11.800+05:30  INFO 10528 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-19T14:39:11.804+05:30  INFO 10528 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-19T14:39:17.396+05:30  INFO 24300 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 24300 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:39:17.398+05:30 DEBUG 24300 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:39:17.399+05:30  INFO 24300 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:39:17.450+05:30  INFO 24300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-19T14:39:17.450+05:30  INFO 24300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-19T14:39:18.575+05:30  INFO 24300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:39:18.651+05:30  INFO 24300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:39:19.392+05:30  INFO 24300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:39:19.403+05:30  INFO 24300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:39:19.404+05:30  INFO 24300 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:39:19.506+05:30  INFO 24300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:39:19.507+05:30  INFO 24300 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2055 ms
+2023-05-19T14:39:19.612+05:30  INFO 24300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-19T14:39:19.877+05:30  INFO 24300 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:39:19.880+05:30  INFO 24300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-19T14:39:19.894+05:30  INFO 24300 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:39:20.068+05:30  INFO 24300 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:39:20.131+05:30  INFO 24300 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-19T14:39:20.472+05:30  INFO 24300 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:39:21.486+05:30  INFO 24300 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T14:39:21.508+05:30  INFO 24300 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:39:22.105+05:30  WARN 24300 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T14:39:23.432+05:30  INFO 24300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T14:39:23.436+05:30  INFO 24300 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T14:39:23.548+05:30  INFO 24300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T14:39:23.572+05:30  INFO 24300 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 6.59 seconds (process running for 7.472)
+2023-05-19T14:39:24.557+05:30  INFO 24300 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T14:39:24.557+05:30  INFO 24300 --- [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T14:39:24.559+05:30  INFO 24300 --- [RMI TCP Connection(11)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-19T14:39:37.468+05:30 TRACE 24300 --- [http-nio-8082-exec-1] c.c.b.controller.AccountController       : Account created with id 1276860000
+2023-05-19T14:39:41.744+05:30 TRACE 24300 --- [http-nio-8082-exec-4] c.c.b.controller.AccountController       : Account created with id 1276860001
+2023-05-19T14:39:42.981+05:30 TRACE 24300 --- [http-nio-8082-exec-3] c.c.b.controller.AccountController       : Account created with id 1276860002
+2023-05-19T14:40:18.159+05:30  INFO 24300 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-05-19T14:40:18.175+05:30  WARN 24300 --- [Thread-6] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T14:40:18.175+05:30  INFO 24300 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T14:40:18.176+05:30  INFO 24300 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T14:40:18.175+05:30 ERROR 24300 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T14:40:18.186+05:30  INFO 24300 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:40:18.195+05:30  INFO 24300 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-19T14:40:18.210+05:30  INFO 24300 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-19T14:40:18.293+05:30  INFO 24300 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 24300 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:40:18.293+05:30 DEBUG 24300 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:40:18.294+05:30  INFO 24300 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:40:18.618+05:30  INFO 24300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:40:18.634+05:30  INFO 24300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:40:18.729+05:30  INFO 24300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:40:18.731+05:30  INFO 24300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:40:18.731+05:30  INFO 24300 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:40:18.756+05:30  INFO 24300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:40:18.757+05:30  INFO 24300 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 460 ms
+2023-05-19T14:40:18.777+05:30  INFO 24300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-05-19T14:40:18.796+05:30  INFO 24300 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn11: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:40:18.798+05:30  INFO 24300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-05-19T14:40:18.798+05:30  INFO 24300 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:40:18.832+05:30  INFO 24300 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:40:18.839+05:30  INFO 24300 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:40:18.895+05:30  INFO 24300 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T14:40:18.896+05:30  INFO 24300 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:40:18.994+05:30  WARN 24300 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T14:40:19.647+05:30  INFO 24300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T14:40:19.649+05:30  INFO 24300 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T14:40:19.676+05:30  INFO 24300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T14:40:19.689+05:30  INFO 24300 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 1.42 seconds (process running for 63.589)
+2023-05-19T14:40:19.691+05:30  INFO 24300 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T14:40:38.696+05:30  INFO 24300 --- [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T14:40:38.697+05:30  INFO 24300 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T14:40:38.698+05:30  INFO 24300 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-19T14:40:38.721+05:30 TRACE 24300 --- [http-nio-8082-exec-3] c.c.b.controller.AccountController       : Account created with id 1276860003
+2023-05-19T14:41:14.900+05:30 TRACE 24300 --- [http-nio-8082-exec-3] c.c.b.controller.AccountController       : Account created with id 1276860004
+2023-05-19T14:41:56.080+05:30  INFO 24300 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-19T14:41:56.099+05:30  WARN 24300 --- [RMI TCP Connection(17)-127.0.0.1] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T14:41:56.100+05:30  INFO 24300 --- [RMI TCP Connection(17)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T14:41:56.099+05:30 ERROR 24300 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T14:41:56.100+05:30  INFO 24300 --- [RMI TCP Connection(17)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T14:41:56.112+05:30  INFO 24300 --- [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:41:56.114+05:30  INFO 24300 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-05-19T14:41:56.115+05:30  INFO 24300 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-05-19T14:41:59.159+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 22104 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:41:59.162+05:30 DEBUG 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:41:59.164+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:41:59.229+05:30  INFO 22104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-19T14:41:59.229+05:30  INFO 22104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-19T14:42:00.429+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:42:00.512+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:42:01.191+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:42:01.201+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:42:01.202+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:42:01.300+05:30  INFO 22104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:42:01.302+05:30  INFO 22104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2072 ms
+2023-05-19T14:42:01.415+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-19T14:42:01.714+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:42:01.717+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-19T14:42:01.732+05:30  INFO 22104 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:42:01.924+05:30  INFO 22104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:42:02.002+05:30  INFO 22104 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-19T14:42:02.344+05:30  INFO 22104 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:42:03.326+05:30  INFO 22104 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T14:42:03.338+05:30  INFO 22104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:42:03.827+05:30  WARN 22104 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T14:42:05.323+05:30  INFO 22104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T14:42:05.331+05:30  INFO 22104 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T14:42:05.443+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T14:42:05.469+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 6.8 seconds (process running for 7.726)
+2023-05-19T14:42:06.283+05:30  INFO 22104 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T14:42:06.284+05:30  INFO 22104 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T14:42:06.286+05:30  INFO 22104 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-19T14:42:29.194+05:30 TRACE 22104 --- [http-nio-8082-exec-1] c.c.b.controller.AccountController       : Account created with id 1276860001
+2023-05-19T14:42:50.422+05:30 TRACE 22104 --- [http-nio-8082-exec-2] c.c.b.Exception.GlobalExceptionHandler   : Account not found with accountId: 10000000
+2023-05-19T14:42:50.425+05:30  WARN 22104 --- [http-nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cognizant.bankapplication.Exception.ResourceNotFoundException: Account not found with accountId: 10000000]
+2023-05-19T14:43:58.776+05:30 TRACE 22104 --- [http-nio-8082-exec-2] c.c.b.Exception.GlobalExceptionHandler   : must not be null
+2023-05-19T14:43:58.780+05:30  WARN 22104 --- [http-nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in private org.springframework.http.ResponseEntity<com.cognizant.bankapplication.model.response.AccountServiceResponseModel> com.cognizant.bankapplication.controller.TransactionController.createNewTransaction(com.cognizant.bankapplication.model.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [null]; codes [NotNull.transaction.amount,NotNull.amount,NotNull.java.lang.Double,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount]]; default message [must not be null]] ]
+2023-05-19T14:45:07.549+05:30 TRACE 22104 --- [http-nio-8082-exec-7] c.c.b.Exception.GlobalExceptionHandler   : JSON parse error: Cannot coerce empty String ("") to `com.cognizant.bankapplication.model.Transaction$TransactionType` value (but could if coercion was enabled using `CoercionConfig`)
+2023-05-19T14:45:07.554+05:30  WARN 22104 --- [http-nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to `com.cognizant.bankapplication.model.Transaction$TransactionType` value (but could if coercion was enabled using `CoercionConfig`)]
+2023-05-19T14:47:40.693+05:30 TRACE 22104 --- [http-nio-8082-exec-1] c.c.b.Exception.GlobalExceptionHandler   : Account not found with accountId: 10000000
+2023-05-19T14:47:40.698+05:30  WARN 22104 --- [http-nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cognizant.bankapplication.Exception.ResourceNotFoundException: Account not found with accountId: 10000000]
+2023-05-19T14:48:04.531+05:30 TRACE 22104 --- [http-nio-8082-exec-10] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T14:49:52.068+05:30  INFO 22104 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T14:49:52.105+05:30  WARN 22104 --- [Thread-6] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T14:49:52.105+05:30  INFO 22104 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T14:49:52.105+05:30 ERROR 22104 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T14:49:52.110+05:30  INFO 22104 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T14:49:52.125+05:30  INFO 22104 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:49:52.131+05:30  INFO 22104 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-19T14:49:52.141+05:30  INFO 22104 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-19T14:49:52.285+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 22104 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:49:52.286+05:30 DEBUG 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:49:52.286+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:49:52.919+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:49:52.939+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:49:53.106+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:49:53.107+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:49:53.107+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:49:53.145+05:30  INFO 22104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:49:53.146+05:30  INFO 22104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 858 ms
+2023-05-19T14:49:53.200+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-05-19T14:49:53.228+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn11: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:49:53.228+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-05-19T14:49:53.229+05:30  INFO 22104 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:49:53.288+05:30  INFO 22104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:49:53.340+05:30  INFO 22104 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:49:53.422+05:30  INFO 22104 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T14:49:53.423+05:30  INFO 22104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:49:53.617+05:30  WARN 22104 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T14:49:54.719+05:30  INFO 22104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T14:49:54.725+05:30  INFO 22104 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T14:49:54.772+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T14:49:54.792+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 2.541 seconds (process running for 477.05)
+2023-05-19T14:49:54.799+05:30  INFO 22104 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T14:50:03.733+05:30  INFO 22104 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T14:50:03.735+05:30  INFO 22104 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T14:50:03.739+05:30  INFO 22104 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-05-19T14:50:03.832+05:30 TRACE 22104 --- [http-nio-8082-exec-1] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T14:52:38.061+05:30  INFO 22104 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T14:52:38.075+05:30  WARN 22104 --- [Thread-8] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T14:52:38.075+05:30  INFO 22104 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T14:52:38.075+05:30 ERROR 22104 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T14:52:38.076+05:30  INFO 22104 --- [Thread-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T14:52:38.083+05:30  INFO 22104 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:52:38.085+05:30  INFO 22104 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-05-19T14:52:38.106+05:30  INFO 22104 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-05-19T14:52:38.225+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 22104 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:52:38.226+05:30 DEBUG 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:52:38.227+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:52:39.272+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:52:39.295+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:52:39.444+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:52:39.445+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:52:39.446+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:52:39.486+05:30  INFO 22104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:52:39.486+05:30  INFO 22104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1254 ms
+2023-05-19T14:52:39.539+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-05-19T14:52:39.552+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn22: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:52:39.553+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-05-19T14:52:39.553+05:30  INFO 22104 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:52:39.607+05:30  INFO 22104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:52:39.618+05:30  INFO 22104 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:52:39.712+05:30 ERROR 22104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+2023-05-19T14:52:39.713+05:30  WARN 22104 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+2023-05-19T14:52:39.714+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-05-19T14:52:39.728+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-05-19T14:52:39.729+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T14:52:39.750+05:30  INFO 22104 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-05-19T14:52:39.793+05:30 ERROR 22104 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.8.jar:6.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.8.jar:6.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.8.jar:6.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.8.jar:6.0.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.8.jar:6.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.8.jar:6.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.8.jar:6.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.8.jar:6.0.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.6.jar:3.0.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.6.jar:3.0.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.6.jar:3.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.6.jar:3.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.6.jar:3.0.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.6.jar:3.0.6]
+	at com.cognizant.bankapplication.BankapplicationApplication.main(BankapplicationApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.6.jar:3.0.6]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.0.8.jar:6.0.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.8.jar:6.0.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.8.jar:6.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.8.jar:6.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.8.jar:6.0.8]
+	... 21 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot read the array length because "<local4>" is null
+	at org.hibernate.metamodel.model.domain.internal.JpaMetamodelImpl.lambda$processJpa$3(JpaMetamodelImpl.java:563) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647) ~[na:na]
+	at org.hibernate.metamodel.model.domain.AbstractManagedType.visitDeclaredAttributes(AbstractManagedType.java:109) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.metamodel.model.domain.AbstractManagedType.visitAttributes(AbstractManagedType.java:101) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.metamodel.model.domain.internal.JpaMetamodelImpl.lambda$processJpa$4(JpaMetamodelImpl.java:579) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at java.base/java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1779) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.hibernate.metamodel.model.domain.internal.JpaMetamodelImpl.processJpa(JpaMetamodelImpl.java:578) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:244) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.metamodel.internal.RuntimeMetamodelsImpl.finishInitialization(RuntimeMetamodelsImpl.java:60) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:311) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:415) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1423) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.0.8.jar:6.0.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.8.jar:6.0.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.8.jar:6.0.8]
+	... 25 common frames omitted
+
+2023-05-19T14:53:58.189+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 22104 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:53:58.190+05:30 DEBUG 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:53:58.190+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:53:58.483+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:53:58.499+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:53:58.597+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:53:58.600+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:53:58.601+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:53:58.629+05:30  INFO 22104 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:53:58.629+05:30  INFO 22104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 437 ms
+2023-05-19T14:53:58.661+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-05-19T14:53:58.670+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn27: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:53:58.671+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-05-19T14:53:58.671+05:30  INFO 22104 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:53:58.726+05:30  INFO 22104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:53:58.734+05:30  INFO 22104 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:53:58.791+05:30  INFO 22104 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T14:53:58.791+05:30  INFO 22104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:53:58.893+05:30  WARN 22104 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T14:53:59.578+05:30  INFO 22104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T14:53:59.580+05:30  INFO 22104 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T14:53:59.604+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T14:53:59.617+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 1.453 seconds (process running for 721.875)
+2023-05-19T14:53:59.621+05:30  INFO 22104 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T14:54:04.175+05:30  INFO 22104 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T14:54:04.176+05:30  INFO 22104 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T14:54:04.179+05:30  INFO 22104 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-19T14:54:04.202+05:30 TRACE 22104 --- [http-nio-8082-exec-2] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T14:54:30.279+05:30 TRACE 22104 --- [http-nio-8082-exec-4] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T14:56:38.359+05:30  INFO 22104 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T14:56:38.396+05:30  WARN 22104 --- [Thread-12] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T14:56:38.397+05:30  INFO 22104 --- [Thread-12] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T14:56:38.396+05:30 ERROR 22104 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T14:56:38.398+05:30  INFO 22104 --- [Thread-12] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T14:56:38.418+05:30  INFO 22104 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:56:38.420+05:30  INFO 22104 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-05-19T14:56:38.438+05:30  INFO 22104 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-05-19T14:56:39.088+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 22104 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:56:39.088+05:30 DEBUG 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:56:39.089+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:56:40.108+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:56:40.131+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:56:40.355+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:56:40.356+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:56:40.356+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:56:40.408+05:30  INFO 22104 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:56:40.409+05:30  INFO 22104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1303 ms
+2023-05-19T14:56:40.470+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-05-19T14:56:40.487+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn38: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:56:40.487+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-05-19T14:56:40.488+05:30  INFO 22104 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:56:40.589+05:30  INFO 22104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:56:40.610+05:30  INFO 22104 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:56:40.706+05:30  INFO 22104 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T14:56:40.706+05:30  INFO 22104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:56:41.288+05:30  WARN 22104 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T14:56:43.958+05:30  INFO 22104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T14:56:43.963+05:30  INFO 22104 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T14:56:44.004+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T14:56:44.058+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 5.048 seconds (process running for 886.316)
+2023-05-19T14:56:44.064+05:30  INFO 22104 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T14:58:16.206+05:30  INFO 22104 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T14:58:16.278+05:30  WARN 22104 --- [Thread-19] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T14:58:16.278+05:30  INFO 22104 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T14:58:16.278+05:30 ERROR 22104 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T14:58:16.315+05:30  INFO 22104 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:58:16.316+05:30  INFO 22104 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-05-19T14:58:16.345+05:30  INFO 22104 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-05-19T14:58:18.376+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 22104 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:58:18.376+05:30 DEBUG 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:58:18.376+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:58:19.141+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:58:19.155+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:58:19.347+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:58:19.352+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:58:19.353+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:58:19.421+05:30  INFO 22104 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:58:19.422+05:30  INFO 22104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1043 ms
+2023-05-19T14:58:19.507+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-05-19T14:58:19.518+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn48: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:58:19.519+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-05-19T14:58:19.519+05:30  INFO 22104 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:58:19.652+05:30  INFO 22104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:58:19.719+05:30  INFO 22104 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:58:19.797+05:30  INFO 22104 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T14:58:19.797+05:30  INFO 22104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:58:21.587+05:30  WARN 22104 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T14:58:23.944+05:30  INFO 22104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T14:58:23.959+05:30  INFO 22104 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T14:58:24.023+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T14:58:24.041+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 5.728 seconds (process running for 986.299)
+2023-05-19T14:58:24.045+05:30  INFO 22104 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T14:58:37.302+05:30  INFO 22104 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T14:58:37.353+05:30  WARN 22104 --- [Thread-23] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T14:58:37.354+05:30  INFO 22104 --- [Thread-23] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T14:58:37.353+05:30 ERROR 22104 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T14:58:37.384+05:30  INFO 22104 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:58:37.385+05:30  INFO 22104 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-05-19T14:58:37.398+05:30  INFO 22104 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-05-19T14:58:37.560+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 22104 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T14:58:37.560+05:30 DEBUG 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T14:58:37.560+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T14:58:38.199+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T14:58:38.238+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2023-05-19T14:58:38.445+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T14:58:38.446+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T14:58:38.447+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T14:58:38.507+05:30  INFO 22104 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-05-19T14:58:38.508+05:30  INFO 22104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 945 ms
+2023-05-19T14:58:38.587+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-05-19T14:58:38.601+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn58: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T14:58:38.601+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-05-19T14:58:38.601+05:30  INFO 22104 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T14:58:38.729+05:30  INFO 22104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T14:58:38.762+05:30  INFO 22104 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T14:58:38.842+05:30  INFO 22104 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T14:58:38.842+05:30  INFO 22104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T14:58:39.042+05:30  WARN 22104 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T14:58:41.130+05:30  INFO 22104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T14:58:41.134+05:30  INFO 22104 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T14:58:41.216+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T14:58:41.255+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 3.75 seconds (process running for 1003.513)
+2023-05-19T14:58:41.260+05:30  INFO 22104 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T14:58:43.434+05:30  INFO 22104 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T14:58:43.434+05:30  INFO 22104 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T14:58:43.436+05:30  INFO 22104 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-19T14:58:43.470+05:30 TRACE 22104 --- [http-nio-8082-exec-2] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:01:23.604+05:30  INFO 22104 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:01:23.633+05:30  WARN 22104 --- [Thread-27] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:01:23.634+05:30  INFO 22104 --- [Thread-27] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:01:23.634+05:30  INFO 22104 --- [Thread-27] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:01:23.634+05:30 ERROR 22104 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:01:23.639+05:30  INFO 22104 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:01:23.639+05:30  INFO 22104 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-05-19T15:01:23.663+05:30  INFO 22104 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-05-19T15:01:23.748+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 22104 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:01:23.748+05:30 DEBUG 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:01:23.749+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:01:24.035+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:01:24.048+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:01:24.135+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:01:24.136+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:01:24.136+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:01:24.163+05:30  INFO 22104 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:01:24.163+05:30  INFO 22104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 412 ms
+2023-05-19T15:01:24.182+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-05-19T15:01:24.190+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn69: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:01:24.191+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-05-19T15:01:24.191+05:30  INFO 22104 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:01:24.238+05:30  INFO 22104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:01:24.245+05:30  INFO 22104 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:01:24.292+05:30  INFO 22104 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:01:24.293+05:30  INFO 22104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:01:24.398+05:30  WARN 22104 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:01:25.088+05:30  INFO 22104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:01:25.091+05:30  INFO 22104 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:01:25.109+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:01:25.121+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 1.397 seconds (process running for 1167.379)
+2023-05-19T15:01:25.123+05:30  INFO 22104 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T15:01:28.660+05:30  INFO 22104 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:01:28.661+05:30  INFO 22104 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:01:28.662+05:30  INFO 22104 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-19T15:01:28.683+05:30 TRACE 22104 --- [http-nio-8082-exec-2] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:02:52.944+05:30  INFO 22104 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:02:52.967+05:30  WARN 22104 --- [Thread-31] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:02:52.968+05:30  INFO 22104 --- [Thread-31] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:02:52.968+05:30  INFO 22104 --- [Thread-31] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:02:52.968+05:30 ERROR 22104 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:02:52.974+05:30  INFO 22104 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:02:52.975+05:30  INFO 22104 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2023-05-19T15:02:52.980+05:30  INFO 22104 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2023-05-19T15:02:53.079+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 22104 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:02:53.079+05:30 DEBUG 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:02:53.080+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:02:53.348+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:02:53.361+05:30  INFO 22104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:02:53.433+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:02:53.433+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:02:53.434+05:30  INFO 22104 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:02:53.466+05:30  INFO 22104 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:02:53.466+05:30  INFO 22104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 384 ms
+2023-05-19T15:02:53.485+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2023-05-19T15:02:53.495+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn80: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:02:53.495+05:30  INFO 22104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2023-05-19T15:02:53.495+05:30  INFO 22104 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:02:53.525+05:30  INFO 22104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:02:53.531+05:30  INFO 22104 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:02:53.563+05:30  INFO 22104 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:02:53.565+05:30  INFO 22104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:02:53.664+05:30  WARN 22104 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:02:54.319+05:30  INFO 22104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:02:54.323+05:30  INFO 22104 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:02:54.341+05:30  INFO 22104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:02:54.351+05:30  INFO 22104 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 1.293 seconds (process running for 1256.609)
+2023-05-19T15:02:54.353+05:30  INFO 22104 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T15:02:59.074+05:30  INFO 22104 --- [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:02:59.074+05:30  INFO 22104 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:02:59.079+05:30  INFO 22104 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-05-19T15:02:59.101+05:30 TRACE 22104 --- [http-nio-8082-exec-3] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:04:34.304+05:30  INFO 22104 --- [RMI TCP Connection(55)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-19T15:04:34.317+05:30  WARN 22104 --- [RMI TCP Connection(55)-127.0.0.1] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:04:34.318+05:30  INFO 22104 --- [RMI TCP Connection(55)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:04:34.318+05:30  INFO 22104 --- [RMI TCP Connection(55)-127.0.0.1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:04:34.317+05:30 ERROR 22104 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:04:34.325+05:30  INFO 22104 --- [RMI TCP Connection(55)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:04:34.325+05:30  INFO 22104 --- [RMI TCP Connection(55)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2023-05-19T15:04:34.326+05:30  INFO 22104 --- [RMI TCP Connection(55)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2023-05-19T15:04:37.785+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 23540 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:04:37.788+05:30 DEBUG 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:04:37.790+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:04:37.845+05:30  INFO 23540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-19T15:04:37.846+05:30  INFO 23540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-19T15:04:39.278+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:04:39.354+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:04:39.963+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:04:39.979+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:04:39.980+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:04:40.072+05:30  INFO 23540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:04:40.072+05:30  INFO 23540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2225 ms
+2023-05-19T15:04:40.172+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-19T15:04:40.406+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:04:40.408+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-19T15:04:40.418+05:30  INFO 23540 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:04:40.586+05:30  INFO 23540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:04:40.641+05:30  INFO 23540 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-19T15:04:40.949+05:30  INFO 23540 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:04:41.823+05:30  INFO 23540 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:04:41.833+05:30  INFO 23540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:04:42.320+05:30  WARN 23540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:04:43.793+05:30  INFO 23540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:04:43.798+05:30  INFO 23540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:04:43.898+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:04:43.920+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 6.59 seconds (process running for 7.654)
+2023-05-19T15:04:45.032+05:30  INFO 23540 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:04:45.033+05:30  INFO 23540 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:04:45.034+05:30  INFO 23540 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-19T15:04:53.190+05:30 TRACE 23540 --- [http-nio-8082-exec-1] c.c.b.controller.AccountController       : Account created with id 1276860001
+2023-05-19T15:05:00.115+05:30 TRACE 23540 --- [http-nio-8082-exec-3] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:09:29.794+05:30  INFO 23540 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:09:29.832+05:30  WARN 23540 --- [Thread-6] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:09:29.833+05:30  INFO 23540 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:09:29.835+05:30  INFO 23540 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:09:29.833+05:30 ERROR 23540 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:09:29.852+05:30  INFO 23540 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:09:29.859+05:30  INFO 23540 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-19T15:09:29.885+05:30  INFO 23540 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-19T15:09:29.991+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 23540 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:09:29.992+05:30 DEBUG 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:09:29.992+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:09:30.302+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:09:30.318+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:09:30.421+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:09:30.422+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:09:30.422+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:09:30.449+05:30  INFO 23540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:09:30.449+05:30  INFO 23540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 454 ms
+2023-05-19T15:09:30.473+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-05-19T15:09:30.488+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn11: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:09:30.489+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-05-19T15:09:30.489+05:30  INFO 23540 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:09:30.530+05:30  INFO 23540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:09:30.536+05:30  INFO 23540 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:09:30.595+05:30  INFO 23540 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:09:30.596+05:30  INFO 23540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:09:30.686+05:30  WARN 23540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:09:31.368+05:30  INFO 23540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:09:31.372+05:30  INFO 23540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:09:31.402+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:09:31.412+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 1.459 seconds (process running for 295.146)
+2023-05-19T15:09:31.417+05:30  INFO 23540 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T15:09:35.491+05:30  INFO 23540 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:09:35.491+05:30  INFO 23540 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:09:35.493+05:30  INFO 23540 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-19T15:09:35.522+05:30 TRACE 23540 --- [http-nio-8082-exec-2] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:11:54.549+05:30  INFO 23540 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:11:54.562+05:30  WARN 23540 --- [Thread-8] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:11:54.562+05:30  INFO 23540 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:11:54.562+05:30 ERROR 23540 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:11:54.562+05:30  INFO 23540 --- [Thread-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:11:54.569+05:30  INFO 23540 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:11:54.572+05:30  INFO 23540 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-05-19T15:11:54.590+05:30  INFO 23540 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-05-19T15:11:54.667+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 23540 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:11:54.667+05:30 DEBUG 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:11:54.668+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:11:54.965+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:11:54.978+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:11:55.067+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:11:55.067+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:11:55.068+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:11:55.095+05:30  INFO 23540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:11:55.095+05:30  INFO 23540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 426 ms
+2023-05-19T15:11:55.122+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-05-19T15:11:55.136+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn22: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:11:55.136+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-05-19T15:11:55.137+05:30  INFO 23540 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:11:55.167+05:30  INFO 23540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:11:55.178+05:30  INFO 23540 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:11:55.226+05:30  INFO 23540 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:11:55.226+05:30  INFO 23540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:11:55.326+05:30  WARN 23540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:11:55.978+05:30  INFO 23540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:11:55.981+05:30  INFO 23540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:11:56.004+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:11:56.016+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 1.379 seconds (process running for 439.749)
+2023-05-19T15:11:56.018+05:30  INFO 23540 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T15:12:03.945+05:30  INFO 23540 --- [http-nio-8082-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:12:03.946+05:30  INFO 23540 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:12:03.947+05:30  INFO 23540 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-19T15:12:03.966+05:30 TRACE 23540 --- [http-nio-8082-exec-4] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:12:39.449+05:30  INFO 23540 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:12:39.479+05:30  WARN 23540 --- [Thread-12] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:12:39.479+05:30  INFO 23540 --- [Thread-12] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:12:39.480+05:30  INFO 23540 --- [Thread-12] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:12:39.479+05:30 ERROR 23540 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:12:39.486+05:30  INFO 23540 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:12:39.487+05:30  INFO 23540 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-05-19T15:12:39.500+05:30  INFO 23540 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-05-19T15:12:39.584+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 23540 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:12:39.584+05:30 DEBUG 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:12:39.584+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:12:39.986+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:12:40.013+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:12:40.162+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:12:40.162+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:12:40.163+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:12:40.207+05:30  INFO 23540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:12:40.209+05:30  INFO 23540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 623 ms
+2023-05-19T15:12:40.247+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-05-19T15:12:40.266+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn33: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:12:40.267+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-05-19T15:12:40.267+05:30  INFO 23540 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:12:40.330+05:30  INFO 23540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:12:40.338+05:30  INFO 23540 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:12:40.385+05:30  INFO 23540 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:12:40.386+05:30  INFO 23540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:12:40.485+05:30  WARN 23540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:12:41.292+05:30  INFO 23540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:12:41.295+05:30  INFO 23540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:12:41.325+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:12:41.340+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 1.786 seconds (process running for 485.074)
+2023-05-19T15:12:41.343+05:30  INFO 23540 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T15:12:42.471+05:30  INFO 23540 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:12:42.471+05:30  INFO 23540 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:12:42.472+05:30  INFO 23540 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-19T15:12:42.488+05:30 TRACE 23540 --- [http-nio-8082-exec-2] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:13:28.830+05:30  INFO 23540 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:13:28.843+05:30  WARN 23540 --- [Thread-16] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:13:28.843+05:30  INFO 23540 --- [Thread-16] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:13:28.843+05:30 ERROR 23540 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:13:28.843+05:30  INFO 23540 --- [Thread-16] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:13:28.849+05:30  INFO 23540 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:13:28.850+05:30  INFO 23540 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-05-19T15:13:28.876+05:30  INFO 23540 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-05-19T15:13:28.959+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 23540 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:13:28.959+05:30 DEBUG 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:13:28.960+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:13:29.263+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:13:29.276+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:13:29.380+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:13:29.380+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:13:29.381+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:13:29.415+05:30  INFO 23540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:13:29.415+05:30  INFO 23540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 454 ms
+2023-05-19T15:13:29.438+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-05-19T15:13:29.447+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn44: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:13:29.447+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-05-19T15:13:29.447+05:30  INFO 23540 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:13:29.492+05:30  INFO 23540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:13:29.502+05:30  INFO 23540 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:13:29.555+05:30  INFO 23540 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:13:29.555+05:30  INFO 23540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:13:29.655+05:30  WARN 23540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:13:30.365+05:30  INFO 23540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:13:30.367+05:30  INFO 23540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:13:30.391+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:13:30.402+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 1.478 seconds (process running for 534.136)
+2023-05-19T15:13:30.404+05:30  INFO 23540 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T15:13:34.327+05:30  INFO 23540 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:13:34.329+05:30  INFO 23540 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:13:34.331+05:30  INFO 23540 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-19T15:13:34.356+05:30 TRACE 23540 --- [http-nio-8082-exec-2] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:14:34.029+05:30  INFO 23540 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:14:34.222+05:30  WARN 23540 --- [Thread-20] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:14:34.224+05:30  INFO 23540 --- [Thread-20] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:14:34.224+05:30  INFO 23540 --- [Thread-20] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:14:34.224+05:30 ERROR 23540 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:14:34.249+05:30  INFO 23540 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:14:34.251+05:30  INFO 23540 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-05-19T15:14:34.321+05:30  INFO 23540 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-05-19T15:14:35.038+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 23540 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:14:35.039+05:30 DEBUG 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:14:35.040+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:14:36.225+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:14:36.287+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:14:36.666+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:14:36.670+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:14:36.670+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:14:36.884+05:30  INFO 23540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:14:36.885+05:30  INFO 23540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1839 ms
+2023-05-19T15:14:37.004+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-05-19T15:14:37.061+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn55: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:14:37.062+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-05-19T15:14:37.062+05:30  INFO 23540 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:14:37.252+05:30  INFO 23540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:14:37.290+05:30  INFO 23540 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:14:37.446+05:30  INFO 23540 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:14:37.446+05:30  INFO 23540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:14:37.849+05:30  WARN 23540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:14:41.467+05:30  INFO 23540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:14:41.475+05:30  INFO 23540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:14:41.578+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:14:41.625+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 6.865 seconds (process running for 605.359)
+2023-05-19T15:14:41.641+05:30  INFO 23540 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T15:15:06.250+05:30  INFO 23540 --- [http-nio-8082-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:15:06.252+05:30  INFO 23540 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:15:06.255+05:30  INFO 23540 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-19T15:15:06.317+05:30 TRACE 23540 --- [http-nio-8082-exec-5] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:17:10.708+05:30  INFO 23540 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:17:10.800+05:30  WARN 23540 --- [Thread-24] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:17:10.800+05:30  INFO 23540 --- [Thread-24] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:17:10.801+05:30  INFO 23540 --- [Thread-24] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:17:10.800+05:30 ERROR 23540 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:17:10.822+05:30  INFO 23540 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:17:10.824+05:30  INFO 23540 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-05-19T15:17:10.879+05:30  INFO 23540 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-05-19T15:17:11.127+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 23540 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:17:11.128+05:30 DEBUG 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:17:11.128+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:17:12.714+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:17:12.824+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:17:13.459+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:17:13.460+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:17:13.462+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:17:13.822+05:30  INFO 23540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:17:13.823+05:30  INFO 23540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2689 ms
+2023-05-19T15:17:13.931+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-05-19T15:17:13.958+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn66: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:17:13.959+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-05-19T15:17:13.959+05:30  INFO 23540 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:17:14.198+05:30  INFO 23540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:17:14.288+05:30  INFO 23540 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:17:14.498+05:30  INFO 23540 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:17:14.499+05:30  INFO 23540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:17:21.007+05:30  WARN 23540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:17:28.450+05:30  INFO 23540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:17:28.468+05:30  INFO 23540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:17:28.554+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:17:28.601+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 17.581 seconds (process running for 772.335)
+2023-05-19T15:17:28.609+05:30  INFO 23540 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T15:17:32.527+05:30  INFO 23540 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:17:32.527+05:30  INFO 23540 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:17:32.531+05:30  INFO 23540 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-05-19T15:17:32.583+05:30 TRACE 23540 --- [http-nio-8082-exec-1] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:18:23.694+05:30  INFO 23540 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:18:23.723+05:30  WARN 23540 --- [Thread-28] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:18:23.724+05:30  INFO 23540 --- [Thread-28] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:18:23.724+05:30  INFO 23540 --- [Thread-28] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:18:23.723+05:30 ERROR 23540 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:18:23.733+05:30  INFO 23540 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:18:23.735+05:30  INFO 23540 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-05-19T15:18:23.754+05:30  INFO 23540 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-05-19T15:18:23.919+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 23540 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:18:23.920+05:30 DEBUG 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:18:23.920+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:18:24.567+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:18:24.596+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:18:24.807+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:18:24.807+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:18:24.807+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:18:24.863+05:30  INFO 23540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:18:24.864+05:30  INFO 23540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 939 ms
+2023-05-19T15:18:24.913+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-05-19T15:18:24.937+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn77: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:18:24.938+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-05-19T15:18:24.938+05:30  INFO 23540 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:18:25.029+05:30  INFO 23540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:18:25.050+05:30  INFO 23540 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:18:25.141+05:30  INFO 23540 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:18:25.142+05:30  INFO 23540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:18:25.348+05:30  WARN 23540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:18:27.031+05:30  INFO 23540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:18:27.038+05:30  INFO 23540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:18:27.086+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:18:27.113+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 3.243 seconds (process running for 830.846)
+2023-05-19T15:18:27.116+05:30  INFO 23540 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T15:18:30.428+05:30  INFO 23540 --- [http-nio-8082-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:18:30.429+05:30  INFO 23540 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:18:30.434+05:30  INFO 23540 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-05-19T15:18:30.465+05:30 TRACE 23540 --- [http-nio-8082-exec-4] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:19:10.973+05:30  INFO 23540 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:19:10.998+05:30  WARN 23540 --- [Thread-32] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:19:10.998+05:30  INFO 23540 --- [Thread-32] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:19:10.999+05:30  INFO 23540 --- [Thread-32] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:19:10.998+05:30 ERROR 23540 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:19:11.009+05:30  INFO 23540 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:19:11.011+05:30  INFO 23540 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2023-05-19T15:19:11.030+05:30  INFO 23540 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2023-05-19T15:19:11.205+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 23540 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:19:11.206+05:30 DEBUG 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:19:11.206+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:19:11.845+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:19:11.875+05:30  INFO 23540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:19:12.051+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:19:12.051+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:19:12.052+05:30  INFO 23540 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:19:12.111+05:30  INFO 23540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:19:12.112+05:30  INFO 23540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 903 ms
+2023-05-19T15:19:12.192+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2023-05-19T15:19:12.216+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn88: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:19:12.216+05:30  INFO 23540 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2023-05-19T15:19:12.216+05:30  INFO 23540 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:19:12.328+05:30  INFO 23540 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:19:12.346+05:30  INFO 23540 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:19:12.441+05:30  INFO 23540 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:19:12.442+05:30  INFO 23540 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:19:12.642+05:30  WARN 23540 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:19:14.135+05:30  INFO 23540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:19:14.148+05:30  INFO 23540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:19:14.281+05:30  INFO 23540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:19:14.320+05:30  INFO 23540 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 3.173 seconds (process running for 878.054)
+2023-05-19T15:19:14.330+05:30  INFO 23540 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-05-19T15:19:16.506+05:30  INFO 23540 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:19:16.507+05:30  INFO 23540 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:19:16.517+05:30  INFO 23540 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2023-05-19T15:19:16.580+05:30 TRACE 23540 --- [http-nio-8082-exec-1] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:19:50.536+05:30  INFO 23540 --- [RMI TCP Connection(51)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-05-19T15:19:50.560+05:30  WARN 23540 --- [RMI TCP Connection(51)-127.0.0.1] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:19:50.561+05:30  INFO 23540 --- [RMI TCP Connection(51)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:19:50.561+05:30 ERROR 23540 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:19:50.561+05:30  INFO 23540 --- [RMI TCP Connection(51)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:19:50.576+05:30  INFO 23540 --- [RMI TCP Connection(51)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:19:50.580+05:30  INFO 23540 --- [RMI TCP Connection(51)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2023-05-19T15:19:50.582+05:30  INFO 23540 --- [RMI TCP Connection(51)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2023-05-19T15:19:57.225+05:30  INFO 25596 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 25596 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:19:57.229+05:30 DEBUG 25596 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:19:57.231+05:30  INFO 25596 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-19T15:19:57.369+05:30  INFO 25596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-19T15:19:57.370+05:30  INFO 25596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-19T15:20:00.159+05:30  INFO 25596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-19T15:20:00.321+05:30  INFO 25596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145 ms. Found 2 JPA repository interfaces.
+2023-05-19T15:20:01.664+05:30  INFO 25596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-05-19T15:20:01.693+05:30  INFO 25596 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-19T15:20:01.694+05:30  INFO 25596 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-19T15:20:01.872+05:30  INFO 25596 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-19T15:20:01.873+05:30  INFO 25596 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4501 ms
+2023-05-19T15:20:02.099+05:30  INFO 25596 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-19T15:20:02.605+05:30  INFO 25596 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/h2db/sample user=SA
+2023-05-19T15:20:02.608+05:30  INFO 25596 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-19T15:20:02.635+05:30  INFO 25596 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/h2db/sample'
+2023-05-19T15:20:02.948+05:30  INFO 25596 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-19T15:20:03.061+05:30  INFO 25596 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-19T15:20:03.706+05:30  INFO 25596 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-05-19T15:20:05.658+05:30  INFO 25596 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-19T15:20:05.691+05:30  INFO 25596 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:20:06.739+05:30  WARN 25596 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-19T15:20:10.036+05:30  INFO 25596 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-05-19T15:20:10.052+05:30  INFO 25596 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-19T15:20:10.234+05:30  INFO 25596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-05-19T15:20:10.278+05:30  INFO 25596 --- [restartedMain] c.c.b.BankapplicationApplication         : Started BankapplicationApplication in 14.061 seconds (process running for 16.528)
+2023-05-19T15:20:11.430+05:30  INFO 25596 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-19T15:20:11.433+05:30  INFO 25596 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-19T15:20:11.442+05:30  INFO 25596 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2023-05-19T15:20:12.222+05:30 TRACE 25596 --- [http-nio-8082-exec-2] c.c.b.controller.AccountController       : Account created with id 1276860001
+2023-05-19T15:20:22.222+05:30 TRACE 25596 --- [http-nio-8082-exec-3] c.c.b.service.TransactionService         : Account with id 1276860001 debited with ammount 600.0
+2023-05-19T15:21:27.909+05:30  INFO 25596 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-05-19T15:21:27.950+05:30  WARN 25596 --- [Thread-6] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8082] because the local address was not available
+2023-05-19T15:21:27.951+05:30  INFO 25596 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-19T15:21:27.954+05:30  INFO 25596 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-19T15:21:27.951+05:30 ERROR 25596 --- [http-nio-8082-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-05-19T15:21:27.984+05:30  INFO 25596 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-19T15:21:27.995+05:30  INFO 25596 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-19T15:21:28.023+05:30  INFO 25596 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-19T15:21:28.212+05:30  INFO 25596 --- [restartedMain] c.c.b.BankapplicationApplication         : Starting BankapplicationApplication using Java 17.0.3 with PID 25596 (C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication\target\classes started by 2148128 in C:\Users\2148128\Documents\workspace-spring-tool-suite-4-4.18.0.RELEASE\bankapplication)
+2023-05-19T15:21:28.213+05:30 DEBUG 25596 --- [restartedMain] c.c.b.BankapplicationApplication         : Running with Spring Boot v3.0.6, Spring v6.0.8
+2023-05-19T15:21:28.214+05:30  INFO 25596 --- [restartedMain] c.c.b.BankapplicationApplication         : No active profile set, falling back to 1 default profile: "default"

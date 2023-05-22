@@ -1,5 +1,7 @@
 package com.cognizant.bankapplication.Exception;
 
+import java.math.BigInteger;
+
 public class ResourceNotFoundException extends RuntimeException {
 
 	/**
@@ -7,10 +9,10 @@ public class ResourceNotFoundException extends RuntimeException {
 	 */
 	private static final long serialVersionUID = 1L;
 	private String resourceName;
-	private long fieldValue;
+	private BigInteger fieldValue;
 	private Object fieldName;
 
-	public ResourceNotFoundException(String resourceName, long fieldValue, String fieldName) {
+	public ResourceNotFoundException(String resourceName, BigInteger fieldValue, String fieldName) {
 		super(new String(resourceName+" not found with " +fieldName+": " +fieldValue));
 		this.resourceName = resourceName;
 		this.fieldValue = fieldValue;
@@ -21,7 +23,7 @@ public class ResourceNotFoundException extends RuntimeException {
 		return resourceName;
 	}
 
-	public long getFieldValue() {
+	public BigInteger getFieldValue() {
 		return fieldValue;
 	}
 

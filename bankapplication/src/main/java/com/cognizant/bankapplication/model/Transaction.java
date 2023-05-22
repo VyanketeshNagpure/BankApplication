@@ -1,6 +1,7 @@
 package com.cognizant.bankapplication.model;
 
-import java.sql.Date;
+import java.math.BigInteger;
+import java.util.Date;
 import java.util.concurrent.ThreadLocalRandom;
 
 import jakarta.persistence.Entity;
@@ -16,23 +17,25 @@ public class Transaction {
 	@Id
 	private Long transactionId = Long
 			.valueOf(Math.abs(ThreadLocalRandom.current().nextLong(100_000_000, 999_999_999L)));;
-	
+
 	@NotNull
-	private Long accountId;
+	private BigInteger accountId;
+
 	private Date dateTime = new Date(System.currentTimeMillis());
-	
-	
-	private Long receiversAccountID;
-	
-	public enum TransactionType{
-	    credit,
-	    debit,
-	    transfer
+
+	// Date dateTime = new Date(System.currentTimeMillis());
+
+	//private LocalTime localTime = LocalTime.now(ZoneId.of("GMT+05:30"));
+
+	private BigInteger receiversAccountID;
+
+	public enum TransactionType {
+		credit, debit, transfer
 	}
 
 	@Enumerated(EnumType.STRING)
 	private TransactionType transactionType;
-	
+
 	@NotNull
 	@DecimalMin("15.0")
 	private Double amount;
@@ -41,7 +44,7 @@ public class Transaction {
 		super();
 	}
 
-	public Transaction(Long transactionId, Long accountId, Date dateTime, Long receiversAccountID,
+	public Transaction(Long transactionId, BigInteger accountId, Date dateTime, BigInteger receiversAccountID,
 			TransactionType transactionType, Double amount) {
 		super();
 		this.transactionId = transactionId;
@@ -68,11 +71,11 @@ public class Transaction {
 		this.transactionId = transactionId;
 	}
 
-	public Long getAccountId() {
+	public BigInteger getAccountId() {
 		return accountId;
 	}
 
-	public void setAccountId(Long accountId) {
+	public void setAccountId(BigInteger accountId) {
 		this.accountId = accountId;
 	}
 
@@ -84,11 +87,11 @@ public class Transaction {
 		this.dateTime = dateTime;
 	}
 
-	public Long getReceiversAccountID() {
+	public BigInteger getReceiversAccountID() {
 		return receiversAccountID;
 	}
 
-	public void setReceiversAccountID(Long receiversAccountID) {
+	public void setReceiversAccountID(BigInteger receiversAccountID) {
 		this.receiversAccountID = receiversAccountID;
 	}
 
