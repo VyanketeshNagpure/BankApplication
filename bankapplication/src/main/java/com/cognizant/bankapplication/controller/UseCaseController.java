@@ -43,8 +43,12 @@ public class UseCaseController {
 			List<Transaction> statement = accountRepository.findAllTransactionWithPositiveBalance(accountId);
 			allAccountStatement.add(new Statement(accountId, statement));
 		}
-			
 		return allAccountStatement;
+	}
+	
+	@GetMapping("/positiveBalaceAndpositiveMAB")
+	private List<Account> findAllUserWithPositiveBalancewithmonthlyAverageBalance() {
 		
+		 return accountRepository.findAllUserWithPositiveBalancewithMonthlyAverageBalance();
 	}
 }
