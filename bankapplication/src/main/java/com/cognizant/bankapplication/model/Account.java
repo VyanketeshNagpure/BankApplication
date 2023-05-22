@@ -45,6 +45,7 @@ public class Account {
 	@Pattern(regexp="(^$|[0-9]{10})", message="PhoneNumber should have 10 digits")
 	private String phoneNumber;
 	
+	@NotEmpty
 	@Email
 	@Size(min= 3, message="Please Enter Correct Email format.")
 	private String emailId;
