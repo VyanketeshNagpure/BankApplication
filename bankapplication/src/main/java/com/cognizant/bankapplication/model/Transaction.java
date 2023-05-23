@@ -1,6 +1,8 @@
 package com.cognizant.bankapplication.model;
 
 import java.math.BigInteger;
+import java.time.LocalTime;
+import java.time.ZoneId;
 import java.util.Date;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -25,7 +27,7 @@ public class Transaction {
 
 	// Date dateTime = new Date(System.currentTimeMillis());
 
-	//private LocalTime localTime = LocalTime.now(ZoneId.of("GMT+05:30"));
+	private LocalTime localTime = LocalTime.now(ZoneId.of("GMT+05:30"));
 
 	private BigInteger receiversAccountID;
 

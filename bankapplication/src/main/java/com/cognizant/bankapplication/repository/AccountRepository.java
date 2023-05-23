@@ -19,11 +19,10 @@ public interface AccountRepository extends JpaRepository<Account, BigInteger>{
 	@Query(value = "SELECT t FROM Transaction t WHERE t.accountId = ?1")
 	List<Transaction> findAllTransactionWithPositiveBalance(BigInteger accountId);
 	
-   @Query(value = "SELECT b FROM Account b WHERE b.accountBalance > 0  AND b.monthlyAverageBalance> 0")
+   @Query(value = "SELECT b FROM Account b WHERE b.accountBalance > 0  AND b.monthlyAverageBalance>1000")
 	List<Account> findAllUserWithPositiveBalancewithMonthlyAverageBalance();
 	
 	
 	
 }
- 
  

@@ -2,12 +2,17 @@ package com.cognizant.bankapplication.model;
 
 import java.math.BigInteger;
 
+import com.cognizant.bankapplication.model.Transaction.TransactionType;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
@@ -28,17 +33,24 @@ public class Account {
 	@Pattern(regexp="(^$|[A-Z]{5}[0-9]{4}[A-Z]{1})",message = "First five characters are letters, next 4 numerals, last character letter")
 	private String permanentAccountNumber;
 	
-	@Pattern(regexp = "^((19|20)\\d\\d)-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$",message= "enter in date format yyyy-MM-dd")
+	@Pattern(regexp = "^((196|200)\\d|(197|200)\\d|(198|200)\\d|(199|200)\\d)-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$",
+			message= "Enter in date format yyyy-MM-dd & Age between 18 and 65 ")
 	private String dateOfBirth;
 	
-	@NotEmpty
-	@Size(min= 3, message="AcocuntType should have at least 3 characters")
-	private String acocuntType;
+	public enum accountType {
+		NonSalary, NonCurrent, Saving
+	}
+
+	@Enumerated(EnumType.STRING)
+	private accountType AccountType;
+	//@NotEmpty
+	//@Size(min= 3, message="AcocuntType should have at least 3 characters")
+	//private String acocuntType;
 	
 	@NotEmpty
 	@Size(min= 3, message="AccountStatus should have at least 3 characters")
 	private String accountStatus;
-	
+	@Min(0)
 	private Double accountBalance;
 	
 	@NotEmpty
@@ -57,20 +69,31 @@ public class Account {
 	}
 
 	public Account(BigInteger accountId, String customerName, String permanentAccountNumber, String dateOfBirth,
-			String acocuntType, String accountStatus, Double accountBalance, String phoneNumber, String emailId,
+			accountType accountType, String accountStatus, Double accountBalance, String phoneNumber, String emailId,
 			Double monthlyAverageBalance) {
 		super();
 		this.accountId = accountId;
 		this.customerName = customerName;
 		this.permanentAccountNumber = permanentAccountNumber;
 		this.dateOfBirth = dateOfBirth;
-		this.acocuntType = acocuntType;
+		this.AccountType = accountType;
 		this.accountStatus = accountStatus;
 		this.accountBalance = accountBalance;
 		this.phoneNumber = phoneNumber;
 		this.emailId = emailId;
 		this.monthlyAverageBalance = monthlyAverageBalance;
 	}
+
+
+	public accountType getAccountType() {
+		return AccountType;
+	}
+
+
+	public void setAccountType(accountType accountType) {
+		AccountType = accountType;
+	}
+
 
 	public BigInteger getAccountId() {
 		return accountId;
@@ -104,13 +127,7 @@ public class Account {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public String getAcocuntType() {
-		return acocuntType;
-	}
-
-	public void setAcocuntType(String acocuntType) {
-		this.acocuntType = acocuntType;
-	}
+	
 
 	public String getAccountStatus() {
 		return accountStatus;
@@ -155,7 +172,7 @@ public class Account {
 	@Override
 	public String toString() {
 		return "Account [accountId=" + accountId + ", customerName=" + customerName + ", permanentAccountNumber="
-				+ permanentAccountNumber + ", dateOfBirth=" + dateOfBirth + ", acocuntType=" + acocuntType
+				+ permanentAccountNumber + ", dateOfBirth=" + dateOfBirth + ", acocuntType=" + AccountType
 				+ ", accountStatus=" + accountStatus + ", accountBalance=" + accountBalance + ", phoneNumber="
 				+ phoneNumber + ", emailId=" + emailId + ", monthlyAverageBalance=" + monthlyAverageBalance + "]";
 	}

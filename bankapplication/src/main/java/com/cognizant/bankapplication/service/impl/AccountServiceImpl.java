@@ -40,7 +40,7 @@ public class AccountServiceImpl implements AccountService {
 		existingCustomer.setCustomerName(account.getCustomerName());
 		existingCustomer.setPermanentAccountNumber(account.getPermanentAccountNumber());
 		existingCustomer.setDateOfBirth(account.getDateOfBirth());
-		existingCustomer.setAcocuntType(account.getAcocuntType());
+		existingCustomer.setAccountType(account.getAccountType());
 		existingCustomer.setAccountStatus(account.getAccountStatus());
 		existingCustomer.setAccountBalance(account.getAccountBalance());
 		existingCustomer.setPhoneNumber(account.getPhoneNumber());
