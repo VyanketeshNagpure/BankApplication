@@ -31,7 +31,7 @@ public class TransactionController {
 	private ResponseEntity<AccountServiceResponseModel> createNewTransaction(@Valid @RequestBody Transaction transaction){
 		
 		Long TransctionId = transactionService.createTransaction(transaction);
-		return ResponseEntity.status(HttpStatus.FOUND)
+		return ResponseEntity.status(HttpStatus.CREATED)
 				.body(new AccountServiceResponseModel("transaction successful id : " + TransctionId));
 	}
 	
