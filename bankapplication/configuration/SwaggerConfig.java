@@ -20,6 +20,8 @@ public class SwaggerConfig {
 									+ "then share Equity instrument brochures for investment on contact info"));
 		
 	}
+    // Swagger URL
+    //http://localhost:8083/swagger-ui/index.html
 	
 	 
 }

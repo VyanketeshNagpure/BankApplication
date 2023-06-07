@@ -34,11 +34,6 @@ public class TransactionController {
 	AccountRepository accountRepository;
 	
 	
-	@GetMapping("/test/transaction")
-	private String testTrabsaction() {
-		return "Working";
-	}
-	
 
 	@GetMapping("/MonthlyAvgBal/{AccountId}")
 	private ResponseEntity<AccountServiceResponseModel> GetMonthlyAvgBal(@PathVariable BigInteger AccountId) {
